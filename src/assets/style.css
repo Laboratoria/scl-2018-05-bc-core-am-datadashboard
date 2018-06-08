@@ -1,0 +1,18 @@
+/* 
+Si coloco la imagen de fondo me tapa la info (título y logo de lab)
+.container{
+  content: url(img/posible2.jpeg);
+  size: 100%;
+  background-color: beige;
+} 
+*/
+.col-3{
+  content: url(img/Laboratoria-codigo.png);
+}
+.col-9{
+  text-align: center;
+  font-family: 'Bitter', serif;
+}
+.barraRedes{
+  size: 20px;
+}
