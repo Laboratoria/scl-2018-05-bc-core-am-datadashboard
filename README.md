@@ -12,7 +12,8 @@ El Dashboard brinda la información de las estudiantes de los cohorts por país.
 + **Dashboard**: selección del país a cuya información desea acceder
 + **Ver más**: selección del cohort al que desea acceder (al hacer clic, se muestra las estadísticas generales de dicho cohort en el país especificado)
    + **Ver gráfico** (opcional): se muestra una representación visual de la información
-   + **Búsqueda por estudiante**: una barra de búsqueda donde se debe ingresar el nombre y apellido de la estudiante a cuya información desea acceder. Clic > información detallada de la completitud de la estudiante en relación con cada curso, quiz, etc.
+   + **Lista de estudiantes**: lista con la información de cada estudiante del cohort.
+     + **Ordenar por**: para ordenar la listat según mayor/menor completitud general, de quizzes, etc.
      + **Ver gráfico** (opcional): se muestra una representación visual de la información de la estudiante especificada
 
 
