@@ -1,6 +1,6 @@
-##DATA DASHBOARD
+# DATA DASHBOARD
 
-##DESCRIPCIÓN GENERAL
+## DESCRIPCIÓN GENERAL
 
 El Dashboard brinda la información de las estudiantes de los cohorts por país. Permite acceder a la información de forma ordenada y proporciona una visualización gráfica de la información para facilitar su comprensión. Además, permite la búsqueda de los datos por estudiante, por lo que el usuario puede obtener toda la información que necesita sobre una estudiante en específico.
 
@@ -12,7 +12,7 @@ El Dashboard brinda la información de las estudiantes de los cohorts por país.
 ![búsqueda por estudiante](https://imageshack.com/a/img921/1568/yTQ32h.jpg)
 
 
-##SECCIONES
+## SECCIONES
 
 + Data Dashboard (está seleccionado de forma predeterminada): selección del país a cuya información desea acceder
 + Ver más: selección del cohort al que desea acceder (al hacer clic, se muestra las estadísticas generales de dicho cohort en el país especificado)
