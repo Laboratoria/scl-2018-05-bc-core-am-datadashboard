@@ -18,12 +18,17 @@ El Dashboard brinda la información de las estudiantes de los cohorts por país.
    + **Lista de estudiantes**: lista con la información de cada estudiante del cohort.
      + **Ordenar por**: para ordenar la listat según mayor/menor completitud general, de quizzes, etc.
      + **Ver gráfico** (opcional): se muestra una representación visual de la información de la estudiante especificada
-     
+
 
 
 ## FIGMA SKETCH
 
+### DESKTOP
 https://www.figma.com/file/Dw56JrHHlgMwkEAPgMsqWBhn/Primera-parte
+
+### MOBILE
+
+https://www.figma.com/file/gMsk9TUdj5ta3XFapR28Chik/Untitled?node-id=1%3A2
 
 
 
