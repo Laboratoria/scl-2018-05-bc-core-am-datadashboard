@@ -5,12 +5,7 @@
 El Dashboard brinda la información de las estudiantes de los cohorts por país. Permite acceder a la información de forma ordenada y proporciona una visualización gráfica de la información para facilitar su comprensión. Además, permite la búsqueda de los datos por estudiante, por lo que el usuario puede obtener toda la información que necesita sobre una estudiante en específico.
 
 
-![data dashboard](https://imagizer.imageshack.com/v2/800x600q90/921/yTQ32h.jpg)
-
-![ver más](https://imagizer.imageshack.com/v2/800x600q90/924/te9NoX.jpg)
-
-![búsqueda por estudiante](https://imagizer.imageshack.com/v2/800x600q90/922/WRSQQw.jpg)
-
+| [![data dashboard](https://imagizer.imageshack.com/v2/800x600q90/921/yTQ32h.jpg)]  | [![ver más](https://imagizer.imageshack.com/v2/800x600q90/924/te9NoX.jpg)] | [![búsqueda por estudiante](https://imagizer.imageshack.com/v2/800x600q90/922/WRSQQw.jpg)] |
 
 ## SECCIONES
 
