@@ -1,14 +1,16 @@
 /*Columna Menú gris*/
 .menuGrey {
-    background-color: salmon;
+    background-color:#F2F2F2;
+    border: 1px solid #BDBDBD;
     height: 1000%;
     margin: 0%;
 }
 /*Logo*/
 .logo{
     background-color: #ffffff;
-    padding-bottom: 10%;
+    padding: 10%;
     margin: 0%; 
+    border: 1px solid #BDBDBD;
 }
 /*foto falsa*/
 .photo1{
@@ -22,16 +24,17 @@
 }
 /*Perfil con nombre de valentina*/
 .profile {
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-family: 15px;
     display: inline-block;
-    padding: 5%; 
+    padding-top: 10%;
+    padding-bottom: 10%; 
     float: right;
 }
 
 /*Parte de dashboard*/
 .dashboard {
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
     padding-top: 25%; 
 }
@@ -42,7 +45,7 @@
 }
 /*Parte de sección falsa*/
 .fakeS {
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px; 
     padding-top: 15%;
 }
@@ -55,7 +58,7 @@
 
 /*Parte de configuración falsa*/
 .configF {
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 15px; 
     padding-top: 15%;
 }
@@ -69,9 +72,9 @@
 /*Parte de Cerrar sesión falsa*/
 
 .endS {
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 15px; 
-    padding-top: 15%;
+    padding-top: 100%;
 }
 
 .endP {
