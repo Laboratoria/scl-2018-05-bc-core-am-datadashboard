@@ -1,0 +1,81 @@
+/*Columna Menú gris*/
+.menuGrey {
+    background-color: salmon;
+    height: 1000%;
+    margin: 0%;
+}
+/*Logo*/
+.logo{
+    background-color: #ffffff;
+    padding-bottom: 10%;
+    margin: 0%; 
+}
+/*foto falsa*/
+.photo1{
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: inline-block;
+    width: 25%;
+    height: 30%;
+    float: left;
+    
+}
+/*Perfil con nombre de valentina*/
+.profile {
+    font-family: sans-serif;
+    font-family: 15px;
+    display: inline-block;
+    padding: 5%; 
+    float: right;
+}
+
+/*Parte de dashboard*/
+.dashboard {
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-top: 25%; 
+}
+.d { 
+    width: 20%;
+    float: left;
+    padding-right: 3%;
+}
+/*Parte de sección falsa*/
+.fakeS {
+    font-family: sans-serif;
+    font-size: 16px; 
+    padding-top: 15%;
+}
+
+.book {
+    width: 20%;
+    float: left;
+    padding-right: 3%;
+}
+
+/*Parte de configuración falsa*/
+.configF {
+    font-family: sans-serif;
+    font-size: 15px; 
+    padding-top: 15%;
+}
+
+.configP {
+    width: 20%;
+    float: left;
+    padding-right: 3%;
+}
+
+/*Parte de Cerrar sesión falsa*/
+
+.endS {
+    font-family: sans-serif;
+    font-size: 15px; 
+    padding-top: 15%;
+}
+
+.endP {
+    width: 20%;
+    float: left;
+    padding-right: 3%;
+}
