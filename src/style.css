@@ -36,6 +36,32 @@
 
 /*Súper Menú*/
 
+.menu {
+    width: 100%; 
+}
+
+.menu a {
+    background-color: #eee; 
+    color: black; 
+    display: inline-block;
+    padding: 12px; 
+    text-decoration: none; 
+}
+
+.menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.current {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    height: 100%;
+}
+
 li{
     text-decoration: none;
     list-style: none;
@@ -48,60 +74,13 @@ li{
     font-size: 40px;
     color: gray;
     padding-right: 3%; 
+    display: inline-block;
 }
-
-
-/*Parte de dashboard*/
-.dashboard {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px;
-    padding-top: 25%; 
+/*Fin Menú*/
+/*Cerrar sesión*/
+.endS a{
+    text-decoration: none; 
 }
-.d { 
-    width: 20%;
-    float: left;
-    padding-right: 3%;
-}
-/*Parte de sección falsa*/
-.fakeS {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px; 
-    padding-top: 15%;
-}
-
-.book {
-    width: 20%;
-    float: left;
-    padding-right: 3%;
-}
-
-/*Parte de configuración falsa*/
-.configF {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 15px; 
-    padding-top: 15%;
-}
-
-.configP {
-    width: 20%;
-    float: left;
-    padding-right: 3%;
-}
-
-/*Parte de Cerrar sesión falsa*/
-
-.endS {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 15px; 
-    padding-top: 100%;
-}
-
-.endP {
-    width: 20%;
-    float: left;
-    padding-right: 3%;
-}
-
 /*Columna amarilla*/
 .yellowC {
     background-color: yellow;
