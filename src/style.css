@@ -34,6 +34,23 @@
     float: right;
 }
 
+/*Súper Menú*/
+
+li{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    padding: 5%;
+}
+
+.icon {
+    font-size: 40px;
+    color: gray;
+    padding-right: 3%; 
+}
+
+
 /*Parte de dashboard*/
 .dashboard {
     font-family: 'Roboto Condensed', sans-serif;
