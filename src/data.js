@@ -1,3 +1,4 @@
+
 //PARA CREAR FUNCIÓN GLOBAL
 window.computeUsersStats = (users, progress, courses) => {
 
@@ -24,3 +25,5 @@ window.filterUsers = (users, filterBy) => {
 window.processCohortData = () => {
 
 };
+
+/////CREAR FUNCIÓN PARA LOGIN (CON CONDICIONAL + ALERT() )
