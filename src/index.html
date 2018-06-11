@@ -2,17 +2,73 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="grid.css">
+    <link rel="shortcut icon" type="image/png" href="../src/assests/img/tru9y_wg_400x400.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
   </head>
   <body>
 
-   <p id='test'></p>
 
-
-   <section><h1>probando</h1></section>
-   <script type="text/javascript" src="users.json"></script>
-  <script src="main.js"></script>
     
+     <!-- primer row -->
+     <section class="row">
+        <!-- inicio columna 3 -->
+       <section class="col-3 menuGrey">
+          <section class="logo"> <!-- Para Logo -->
+            <img src="../src/assests/img/logo_laboratoria-07_(2).png" alt="Logo Laboratoria">
+          </section> <!-- Fin Logo -->
+
+          <section class="profile"><!-- Para nombre de perfil con foto --> 
+            <img class="photo1" src="../src/assests/img/picture.png" alt="foto de valentina">
+            <h3>Valentina Smith</h3>
+            <h5>valentina@mail.com</h5>            
+          </section><!-- fin de nombre perfil con foto -->
+
+          <!-- espacio para menú -->
+          <section class="menu">
+            <ul>
+             <li><i class="icon fas fa-home"></i><a href="#" class="current">INICIO</a></li>
+             <li><i class="icon fas fa-tachometer-alt"></i><a href="#"class="dashboard">DASHBOARD</a></li>
+             <li><i class="icon fas fa-book-open"></i><a href="#">CURSOS</a></li>
+             <li><i class="icon fas fa-cog"></i><a href="#">CONFIGURACIÓN</a></li>                            
+            </ul>
+            <!-- cierre menú -->
+          </section>
+            <!-- Sección Cerrar Sesión-->
+           <section class="endS"> 
+              <li><i class="icon fas fa-sign-out-alt"></i><a href="#">Cerrar Sesión</a></li>
+              <!-- fin de sección Cerrar Sesión-->
+          </section>
+
+         <!-- fin de columna 3 -->
+        </section>
+            <!-- comienzo columna 9 de título -->
+        <section class="col-9 yellowC">
+            <h1>BIENVENIDA</h1>
+              <!-- final de columna 9 de título -->
+          </section>
+          <!-- comienzo col9 con foto -->
+        <section class="col-9 labPhoto">
+          <img src="../src/assests/img/Laboratoria2.png" alt="Laboratoria">
+          <!-- fin de col9 con foto -->
+        </section>
+
+       <!-- fin de primer row -->
+     </section>
+    
+     <!-- comienzo de segundo row -->
+      <section class="row">
+       
+    
+    
+       <!-- final de segundo row -->
+     </section>
+  
+    <script src="main.js"></script>
   </body>
 </html>

@@ -14,9 +14,9 @@ window.computeUsersStats = (users, progress, courses) => {
 };
 
 
-window.sortUsers = (users, orderBy, orderDirection) => {
-
+window.sortUsers = (users, orderBy, ordedDirection) => {
 };
+
 
 window.filterUsers = (users, filterBy) => {
 
@@ -27,3 +27,5 @@ window.processCohortData = () => {
 };
 
 /////CREAR FUNCIÓN PARA LOGIN (CON CONDICIONAL + ALERT() )
+
+
