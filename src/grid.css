@@ -1,4 +1,3 @@
-/* Grid default */
 *{
   box-sizing: border-box;
   margin: 0;
@@ -25,7 +24,7 @@
   padding: 12px;
   float: left;
 }
-
+/* 1/12 * 100 = A 1 columna*/
 .col-1 {
   width: 8.333333333%;
 }
@@ -72,24 +71,4 @@
 
 .col-12 {
   width: 100%;
-}
-
-/*Estilo*/
-
-/*logo*/
-.seccion_superior {
-  height: 20px;
-  margin: auto;
-  display: block;
-  padding: 10px;
-}
-
-/*titulo contenido superior*/
-.seccion_superior1 {
-  background-color: rgb(255, 229, 33);
-}
-
-/*Botones*/
-.begin {
-  background-color: rgb(255, 229, 33);
 }
