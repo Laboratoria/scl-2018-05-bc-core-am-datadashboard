@@ -75,6 +75,21 @@
 }
 
 /*Estilo*/
+
+/*logo*/
+.seccion_superior {
+  height: 20px;
+  margin: auto;
+  display: block;
+  padding: 10px;
+}
+
+/*titulo contenido superior*/
+.seccion_superior1 {
+  background-color: rgb(255, 229, 33);
+}
+
+/*Botones*/
 .begin {
   background-color: rgb(255, 229, 33);
 }

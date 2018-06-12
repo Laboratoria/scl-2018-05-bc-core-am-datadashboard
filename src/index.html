@@ -8,27 +8,29 @@
   </head>
   <body>
     <div class = 'container'>
-     <!-- Primera sección de logo y título columna 3-->
+     <!-- Primer row - logo y título -->
       <div class = 'row'>
         <div class = 'col-3 seccion_superior'>
           <img src="img/logo.png" alt="">
         </div>
-        <div class = 'col-9 seccion_superior'>
+        <div class = 'col-9 seccion_superior1'>
           <h1>Data Dashboard</h1>
         </div>
-      </div>
-    <!-- seccion de menú -->
+    </div>
+    <!-- Segundo row - sección de menú --> 
     <div class = 'row'>
       <div class = 'col-3 seccion_menu'>
+
         <div><span>VALENTINA SMITH</span></div>
         <div><span>ADMIN</span></div>
         <div><span>DATA DASHBOARD</span></div>
         <div><span>CONFIGURACIÓN</span></div>
-        <div><span>CERRAR SESIÓN</span> </div>     
+        <div id='singoff'><span>CERRAR SESIÓN</span> </div>     
       </div>
     </div>
-    <!-- Sección de selección columna 9 -->
+    <!-- Tercer row - sección de selección -->
     <div class="row"> 
+    <!-- Menú sede -->
       <div class="col-9 segunda_seccion"> 
           <select id="menupais">
               <option value="Sede">Sede</option>
@@ -37,6 +39,7 @@
               <option value="Mexico">México</option>
               <option value="Peru">Perú</option>
           </select>
+    <!-- Menú cohorts -->
           <select id="menucohort">
               <option value="cohort">cohort1</option>
               <option value="">cohort2</option>
@@ -45,29 +48,32 @@
               <option value="">cohort5</option>
           </select>
       </div>
+    <!-- Menú ordenar por -->
       <div class = 'col-9 segunda_seccion'>
         <select id="menufiltro">
           <option value="">Filtrar por</option>
           <option value="">Ascendente</option>
           <option value="">Descendente</option>
         </select>
-      <input class = 'col-9 segunda_seccion' type="file" name="myFile">Buscar</input>
+    <!-- Buscador de alumnas -->
+      <input type="file" name="myFile">Buscar</input>
        </div>
    </div>
+   <!-- contenido -->
       <div class = 'col-9 segunda_seccion boton' >
-        <div>
+        <div class='content'>
           <h3>Cursos</h3>
           <button class = 'begin'>Empezar</button>
         </div>
-        <div>
+        <div class='content'>
           <h3>Lecturas</h3>
           <button class = 'begin'>Empezar</button>
         </div>
-        <div>
+        <div class='content'>
           <h3>Quizzes</h3>
           <button class = 'begin'>Empezar</button>
         </div>
-        <div>
+        <div class='content'>
           <h3>Ejercicios</h3>
           <button class = 'begin'>Empezar</button>
         </div>
