@@ -1,7 +1,3 @@
-window.computeUsersStats = (users, progress, courses) =>{
-
-};
-
 window.sortUsers = (users, orderBy, orderDirection) => {
 
 };
