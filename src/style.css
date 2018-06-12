@@ -1,0 +1,14 @@
+.container-login{
+	display: none;
+}
+.img-logo img{
+	width: 100%;
+}
+
+.img-logo-intra img{
+	width: 200px;
+}
+.img-face img{
+	border-radius: 100%;
+	width: 70px;
+}
