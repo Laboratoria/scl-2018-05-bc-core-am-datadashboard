@@ -1,46 +1,56 @@
-#barra-logo{
+header{
     padding: 1em;
     background-color:  rgb(255, 229, 33);
     
 }
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box
-}
-#header{
-    margin: auto;
-    width: 20%; /* para centrar lista de menu*/
-}
-ul, ol{
-    list-style: none; /* desapareceran las villetas*/
-}
-.nav li a{ /* los elemento a contenidos en li y nav tendran estas caracteristicas*/
+.accordion {
     background-color: rgb(86, 248, 154);
-    text-decoration: none;
-    padding: 10px 15px;
-    display:block; /*para que los elementos no esten solapados*/
-
-}
-.nav li a:hover{ /*cuando pase el mause cambiara de color*/
-    background-color:rgb(241, 156, 227);
-}
-.nav > li{ /*li directos que estan dentro de nav tendran estas caracteristicas*/
-    float: left;
-}
-.nav li ul{
-    display: none; /* los submenu desapareceran*/
-    position: absolute;
-    min-width: 140px;
-}
-.nav li:hover > ul { /*los ul que esten directo a li que esta dentro de nav apareceran cuando pase el mouse*/
-    display:inline-block;
-}
-.nav li ul li{
-    position: relative;
-}
-.nav li ul li ul{
-    right:-140px;
-    top:0px;
+    color: black
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
 }
 
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+.submenu1 {
+    background-color: rgb(255, 229, 33);
+    color:black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active, .submenu1:hover {
+    background-color: rgb(241, 156, 227);
+}
+.submenu2{
+    background-color: rgb(86, 248, 154);
+    color: black
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active, .submenu2:hover {
+    background-color: rgb(241, 156, 227);
