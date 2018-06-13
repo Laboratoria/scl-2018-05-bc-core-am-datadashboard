@@ -1,6 +1,6 @@
 window.computeUsersStats = (users, progres, courses) => {
 
-;}
+};
 
 window.sortUsers = (users, orderBy, orderDirection) => {
 
