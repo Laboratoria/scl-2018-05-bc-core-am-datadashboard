@@ -1,3 +1,4 @@
+/*Global*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,16 +6,25 @@
 }
 
 /*cada vez que utilize la clase container, tomara estos estilos*/
-/*.row:before, .row:after {
+.container { 
+  width: 100%;
+
+}
+/*
+.row:before, .row:after {
   content: " ";
   display: table;
 }
 
+.row:after {
+  clear: both;
+}
+*/
 [class*="col-"] {
-  
-  padding: 15px;
+  min-height: 7px;
   float: left;
-}*/
+}
+
 .col-1 {
   /* (1/12) x 100 */
   width: 8.333333333%;

@@ -3,45 +3,38 @@
   <head>
     <meta charset="utf-8">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0,user-scalable=no">
-    <title>Data Dashboard</title>
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="style.css" />
+   	<title>Data Dashboard</title>
     <link href = "https://fonts.googleapis.com/css?family= Song + Myung " rel = "stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
   </head>
   <body>
-    <!--Pimer row-->
-    <section class="row">
-      <!--columna 3-->
-      <section class="col-3 menu">
-        <section class="img"><!--logo-->
-          <img src="../src/img/Laboratoria-1.png" alt=" Logo de Laboratoria!!">
-        </section><!--Fin img-->
-        <section class="home"><!--Menu-->
+    <nav class="menu">
+      <div class="col-3" >
+        <img src="../src/img/Laboratoria-1.png" >
+      </div>
+      <div class="col-9">
+        <h1 class="titulo">Alumnas</h1>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-3 home">
           <br>
-          <li><i class="icon far fa-user"></i>Valentina Smith</li>
-          <ul>
-            <li><i class="icon fas fa-home"></i><a href="" class="ini">  Inicio</a></li>
-            <li><i class="icon fas fa-book-open"></i><a href="" class="coh">Cohorts</a></li>
-            <li><i class="icon fas fa-cog"></i><a href="" class="conf">Configuración</a></li>
-          </ul> 
-        </section><!--Fin Menú-->
-          <section class="close"><!--Cierre de sección-->
-            <li><i class="icon fas fa-sign-out-alt"></i><a href="">Cerrar Sesión</a></li>
-          </section><!--Fin de cierre de sección-->
-  </section><!--fin de columna 3-->
-  
-  <!--Inicio  de columna 9-->
-  <section class="col-9 title">
-    <h1>Alumnas</h1>
-  </section>
-  <section class="col-9">
-    <section class="bot">
-      <h1> Perú - Lima </h1>
-    </section>
-  </section>
-  </section> <!--Fin del primer row -->
+          <li><i class="icon far fa-user"></i><a href="" class="log">Valentina S.</a></li>
+          <br>
+          <li><i class="icon fas fa-home"></i><a href="" class="ini">  Inicio</a></li>
+          <br>
+          <li><i class="icon fas fa-book-open"></i><a href="" class="coh">Cohorts</a></li>
+          <br>
+          <li><i class="icon fas fa-cog"></i><a href="" class="conf">Configuración</a></li>
+          <li><i class="icon fas fa-sign-out-alt"></i><a href="" class="close">Cerrar Sección</a></li>
+        </div>
+      </div>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
