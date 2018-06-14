@@ -14,20 +14,25 @@ h2 {
   padding: 3%;
   font-weight: 100%;
 }
+/* -------------Estilos Barra Menu---------------*/
+.col-md-3 .col-md-pull-9 {
+  height: 60px;
+}
 
-.col-md-3 col-md-pull-9 contenedor {
-
+.col-md-3 .col-md-pull-9 .contenedor {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo, iconMenu {
   margin: 5px;
 }
 
-iconMenu {
+.iconMenu {
   display: block;
   width: 40px;
   font-size: 30px;
-  background: gray;
+  background: white;
   color: black;
   text-align: center;
   line-height: 45%;
@@ -37,8 +42,9 @@ iconMenu {
 .nav {
   position: absolute;
   top: 60px;
-  left: 0;
+  left: -100;
   width: 100%;
+  transition: all 0.4s;
 }
 
 .menu {
@@ -59,4 +65,8 @@ iconMenu {
 .menuLink:hover {
   background: #FF009E;
   color: black;
+}
+
+.view {
+  left: 0;
 }
