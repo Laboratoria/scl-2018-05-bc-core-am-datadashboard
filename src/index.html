@@ -12,36 +12,41 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <h1>Header</h1>
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-9 col-md-push-3"></div>
+        <div class="col-md-9 col-md-push-3">
+          <header>
+            <h2>Titulo</h2>
+          </header>
+        </div>
+        <div class="col-md-3 col-md-pull-9 contenedor">
+            <span id="logo"><h1 class="logo">LABORATORIA</h1></span> 
+            <nav class="nav" id= "nav">
+              <ul class="menu">
+                <li class="perfilUser"> <h4>Training Manager</h4> training.manager@laboratoria.la</li>
+                <li class="menuItem"><a class="menuLink" href="">INICIO</a></li>
+                <li class="menuItem"><a class="menuLink" href="">ESTUDIANTES</a></li>
+                <li class="menuItem"><a class="menuLink" href="">PROGRESO</a></li>
+                <li class="menuItem"><a class="menuLink" href="">CURSOS</a></li>
+              </ul>
+            </nav>
+        </div>
     </div>
-  </header>
-  <!-- <div class="container"> -->
-  <section class="main row">
-    <!-- MENU -->
-    <div id="menu" class="dropdown col-xs- col-sm- col-md- col-lg-3"><!-- esto deberia ser el icono de menu -->
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="false">
-        Dropdown
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-        <button class="dropdown-item" type="button">Action</button>
-        <button class="dropdown-item" type="button">Another action</button>
-        <button class="dropdown-item" type="button">Something else here</button>
-      </div>
-    </div>
-    </div>
-    <!-- CONTENIDO DE SELECCION MENU -->
-    <aside class="col-xs- col-sm- col-md- col-md-9 col-lg-9">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati reprehenderit vitae id, commodi doloribus
-        tempore at earum laborum. Blanditiis adipisci voluptas voluptates ipsa hic molestiae laborum ipsum odio libero.</p>
-    </aside>
-  </section>
-  <!-- </div> -->
+  </div>
+  <script src="menu.js"></script>
+
   <script src="main.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <!-- link bootstrap librerias -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
 </body>
 

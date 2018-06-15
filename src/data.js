@@ -1,17 +1,20 @@
-window.computeUsersStats = (users, progres, courses) => {
+
+window.computeUsersStats = (users, progress, courses) => {
 
 };
+
+
 
 window.sortUsers = (users, orderBy, orderDirection) => {
 
 };
 
-window.filterUsers = (user, search) => {
+window.filterUsers = (users, search) => {
 
 };
 
-window.processCohortData = (options) =>{
-
+window.processCohortData = (options) => {
+  
 };
 
 /* it('debería exponer función filterUsers en objeto global', () => {

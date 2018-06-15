@@ -1,4 +1,96 @@
+
+.container-fluid{
+  background: #fafafa;
+  padding: 0%;
+  margin: 0%;
+}
+
 header{
   background: yellow;
   color: black;
+  padding: 0%;
+  display: flex;
+  width:auto; 
+	height: 100px;
+  margin-bottom: 0%;
+	padding: 0%;
+  text-align: left;
 }
+
+h2 {
+  padding: 3%;
+  font-weight: 100%;
+}
+/* -------------Estilos Barra Menu---------------*/
+
+.col-md-3 .col-md-pull-9 {
+ 
+  height: 100vh;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between; 
+  height: 100vh;  
+}
+
+.logo {
+  text-align: center;
+  line-height: 45%;
+  margin-right: auto;
+  padding: 1em 1em;
+}
+
+.perfilUser {
+  background: #fafafa;
+  color: #737373;
+  text-align: justify;
+  padding: 2em 1em;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  
+}
+
+.iconMenu {
+  display: block;
+  width: 40px;
+  font-size: 30px;
+  background: white;
+  text-align: center;
+  line-height: 45%;
+  margin-right: auto;
+}
+
+.nav {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 105%;
+  transition: all 0.4s;
+  border-right: 1px solid #737373;    
+  height: 100vh;
+}
+
+.menu {
+  list-style: none;
+  padding-top: 19%;
+  margin: 0%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.menuLink {
+  display: block;
+  padding: 20px;
+  background: #ffffff;
+  text-decoration: none;
+  color: black;
+}
+
+.menuLink:hover {
+  background: #FF009E;
+  color: black;
+}
+
+.view {
+  left: 0;
