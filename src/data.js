@@ -14,4 +14,3 @@ window.filterUsers = (users, filterBy) => {
 window.processCohortData = (cohortData, orderBy, orderDirection, filterBy) => {
 
 };
-
