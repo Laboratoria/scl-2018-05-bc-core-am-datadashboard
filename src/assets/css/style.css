@@ -1,12 +1,19 @@
+body {
+  font-family: 'Open Sans';
+}
 #barraLateral {
   background-color: #FFE521;
-
-
 }
+
 .col-10 {
   padding: 0%;
 }
 
 #barraSuperior {
   background-color: #FFE521;
+}
+
+#imgPersonal {
+  border-radius: 100%;
+  
 }
