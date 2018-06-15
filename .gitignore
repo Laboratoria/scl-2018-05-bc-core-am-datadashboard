@@ -1,4 +1,6 @@
-.DS_Store
+
+.DS_STORE
 *.swp
 .nyc_output/
 node_modules/
+
