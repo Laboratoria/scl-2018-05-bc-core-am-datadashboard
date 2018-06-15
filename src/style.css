@@ -8,7 +8,11 @@
 .img-logo-intra img{
 	width: 200px;
 }
-.img-face img{
+.img-face{
 	border-radius: 100%;
 	width: 70px;
+}
+.background-avatar{
+	background-color: #FFC107;
+	border-radius: 5px;
 }
