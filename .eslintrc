@@ -1,0 +1,31 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "reglas": {
+    "espacio entre palabras clave": 1,
+    "espacio-antes-función-paren": [1, "nunca"],
+    "eqeqeq": 1,
+    "espacio-infijo-ops": 1,
+    "espacio en coma": 1,
+    "estilo de corsé": 1,
+    "no-multiple-empty-lines": 1,
+    "camelcase": 1,
+    "func-call-spacing": 1,
+    "espacio entre llaves": 1,
+    "semi": 1,
+    "decimal no flotante": 1,
+    "no-multi-espacios": 1,
+    "object-property-newline": 1,
+    "bloques acolchados": [1, "nunca"],
+    "espacio antes de bloques": 1,
+    "espacio en parens": 1,
+    "spaced-comment": 1,
+    "comillas": [1, "single"],
+    "id-length": [1, {"exceptions": ["i", "j", "x"]}],
+    "sangría": [1, 2],
+    "no-array-constructor": 1
+  }
+}
+
+
