@@ -50,15 +50,22 @@ body {
   .site {
     background-color: #56F89A;
   }
-  
+  .site:hover{
+    background-color: rgba(135, 238, 178, 0.993)
+  }
   .generation {
     background-color: #FFE521;
+  }
+  .generation:hover{
+    background-color: rgb(241, 226, 109);
   }
   
   .turn {
     background-color: #56F89A;
   }
-  
+  .turn:hover {
+    background-color: rgba(135, 238, 178, 0.993) ;
+  }
   .student {
     padding: 0;
     margin: inherit;
