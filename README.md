@@ -9,45 +9,45 @@ La interfaz esta detinada para uso de la Training Managers (TMs) de Laboratoria.
 * Nombre: V.
 * Cargo: TMs en Chile
 
-## a. Para empezar, nos gustaría saber. ¿Con cuanta frecuencia utilizas la aplicación LMS?
+### a. Para empezar, nos gustaría saber. ¿Con cuanta frecuencia utilizas la aplicación LMS?
 
 R: La utilizo todos los días o día por medio esto depende de la semana y de la frecuencia de lo que estén haciendo las alumnas.
 
-## b. ¿Para qué utilizas la aplicación?
+### b. ¿Para qué utilizas la aplicación?
 
 R: La utilizo para ir revisando el avance de cada alumna, para ir viendo las que han avanzado o no y ver los resultados. Cuando observo que los resultados están malos, se ve la opción de que se haga por ejemplo un repaso de la materia.
 
-## c. ¿Te agrada el uso de la aplicación?
+### c. ¿Te agrada el uso de la aplicación?
 
 R: Si me gusta, la utilizo porque es una herramienta que me ayuda a acceder a la información para hacer mi trabajo bien.
 
-## d. ¿Que es lo que más te agrada?
+### d. ¿Que es lo que más te agrada?
 
 R: Que acumule los datos de manera útil para mí, en donde yo obtengo los resultados sin tener que hacer tantos cálculos, para así hacer más agiles la toma de decisiones.
 
-## e. ¿Qué le añadirías a la aplicación?
+### e. ¿Qué le añadirías a la aplicación?
 
 R: Entre más funciones tenga mayor opciones y funcionalidad tienen para mí la aplicación y seria genial poder agregar la función del Datadashboard
 
-## f. ¿Para ti cuáles son los datos más relevantes y por qué?
+### f. ¿Para ti cuáles son los datos más relevantes y por qué?
 
 R: 
 1. El porcentaje de avance.
 2. los resultados.
 
-## g. En cuanto a las funciones de la aplicación. ¿Cuál sería el orden de prioridad ordenándolos de mayor a menor prioridad?
+### g. En cuanto a las funciones de la aplicación. ¿Cuál sería el orden de prioridad ordenándolos de mayor a menor prioridad?
 
 R: Seria:
 1.	 el grado de completitud de los retos de los diferentes tipos de evaluaciones
 2.	Ver los resultados.
 3.	Y luego poder hacer un ranking. (Sería una función importante para poder ordenar los resultados tanto de lecturas, ejercicios autocorregidos y quizzes de las alumnas.
 
-## h. ¿Cuáles son los colores que de deberíamos utilizar para la aplicación?
+### h. ¿Cuáles son los colores que de deberíamos utilizar para la aplicación?
 
 R: Deberían ser los colores que representan a la nueva marca de Laboratoria, en donde el logo tiene una fuente más gruesa y se utiliza el amarillo más fuerte, el menta y el fascia. A demás del blanco y el negro que resaltan los otros colores.
 Y creo que algo importante que agregar seria la legibilidad cuando se lea la información.
 
-## i. Si pudiera cambiarle o agregarle algo. ¿Qué seria?
+### i. Si pudiera cambiarle o agregarle algo. ¿Qué seria?
 
 R: Me gustaría poder agregarle las evaluaciones de soft skills que ustedes realizan, pero eso esta dentro de la data del Json.
 
