@@ -2,6 +2,7 @@
 Usuario Principal: Training Manager de Laboratoria
 
 Objetivo principal de esta plataforma es graficar visualmente el progreso de avance de las estudiantes de Laboratoria para para que la TM use esta Data para toma de desiciones. Los principales datos que nuestra usuario necesita visualizar en la interfaz:
+
  -Ver el perfil de cada estudiante, separado por la sección que corresponda para visualizar los progresos individuales de cada estudiante en los diferentes cursos.
  -Ver el avance general del grupo si es posible verlo graficado en cada curso.
 
@@ -16,4 +17,6 @@ Objetivo principal de esta plataforma es graficar visualmente el progreso de ava
  distinta data de avance por grupo, curso y personal.
 
 El proceso de diseño se basó en la entrevista, analisis de estructura del lms y la revisión de algunas data dashboard de universidades. El sketch es el resultado de la investigación
+
+link sketch: https://www.figma.com/file/WQgwq1IoEW25hjCFvuIAQXOT/Dashboard
 
