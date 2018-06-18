@@ -9,3 +9,36 @@
     text-align: center;
     font-size: 1em ; 
 }
+.navbar{
+    background-color: #FFE521; 
+    width: 100%; 
+    height: 100%;
+}
+.btn-secondary{
+    color: #333333; 
+    font-size: 1m ;
+    font-weight:bold;
+    font-family:Arial; 
+    background-color: #FFE521; 
+    border:#FFE521 
+}
+
+.form-group{
+    padding: 1.5em;
+}
+.form-inline{
+    padding: 0.5em;
+}
+.wrapper {
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    width: 23%;
+}  
+#sidebar {
+    
+}
+
+#sidebar.active {
+   
+}
