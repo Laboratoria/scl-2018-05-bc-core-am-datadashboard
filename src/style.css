@@ -4,30 +4,83 @@
   padding: 0%;
   margin: 0%;
 }
-
-header{
+.header{
   background: yellow;
-  color: black;
-  padding: 0%;
   display: flex;
-  width:auto; 
-	height: 100px;
-  margin-bottom: 0%;
-	padding: 0%;
-  text-align: left;
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	overflow: hidden; /* Hacemos que la cabecera tenga una posición fija */
 }
 
-h2 {
-  padding: 3%;
-  font-weight: 100%;
+.logoHeader {
+  background: white; 
+  display: flex;
+  width: auto;
+  height: 63px;
+  margin-bottom: 0%;
+  border-right: 1px solid #ededed;
+  overflow: hidden; 
+}
+
+#laboratoriaLogo {
+  text-align: center;
+  padding: 1em 2em;
+  overflow: hidden; 
+
+}
+
+/* -------------Estilos Barra Menu---------------*/
+
+.contenedorMenu{
+  overflow: hidden;
+  height: 100vh;
+  background: white;
+  border-right: 1px solid #ededed;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+
+.menu {
+  list-style: none;
+  padding: 0%;
+  margin: 0;
+  overflow: hidden; 
+}
+
+.menuLink {
+  display: block;
+  text-decoration: none;
+  color: black;
+  overflow: hidden; 
+}
+
+
+/* Cambiar el color del enlace al desplazar el mouse */
+.menuLink:hover {
+  background: #FF009E;
+  color: black;
+  overflow: hidden; 
+}
+
+/* Contenido escrito y visual*/
+.content{
+  padding: 2.250em 2.250em;
+  overflow-y: auto;
+  overflow-y: hidden;
 }
 /* -------------Estilos Barra Menu---------------*/
 
-.col-md-3 .col-md-pull-9 {
+/* .contenedorMenu {
  
   height: 100vh;
 }
-
 .contenedor {
   display: flex;
   justify-content: space-between; 
@@ -94,3 +147,8 @@ h2 {
 
 .view {
   left: 0;
+<<<<<<< HEAD
+}
+
+=======
+>>>>>>> 0cad39970367de7b573d46a7d28df28a424c2b95
