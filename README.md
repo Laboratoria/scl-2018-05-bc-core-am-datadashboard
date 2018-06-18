@@ -85,3 +85,29 @@ https://raw.githubusercontent.com/nahytar/scl-2018-05-bc-core-am-datadashboard/m
 ## Prototype
 
 https://www.figma.com/proto/0lzCr4jnTq7Fo3SbfE3KarFU/Untitled?node-id=2%3A3&scaling=contain
+
+## Fuentes de Investigación
+
+### CSS
+
+#### transition
+Las transiciones CSS le permite cambiar los valores de propiedad sin problemas (de un valor a otro), durante un período determinado.
+https://www.w3schools.com/css/css3_transitions.asp
+
+#### inherit
+inherit es un valor permitido en todas las propiedades CSS. Hace que el elemento al cual se aplica tome el valor calculado de la propiedad de su elemento padre.
+https://developer.mozilla.org/es/docs/Web/CSS/inherit
+
+### JS
+
+#### getElementsByClassName
+El método getElementsByClassName () devuelve una colección de todos los elementos en el documento con el nombre de la clase especificada, como un objeto NodeList.
+https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp
+
+#### currentTarget
+Identifica el actual target del evento, como el evento que atraviesa el DOM. Siempre hace referencia al elemento cual el controlador del evento fue unido, opuesto a event.target  cual identifica el elemento en cual ocurrió el evento.
+https://developer.mozilla.org/es/docs/Web/API/Event/currentTarget
+
+#### stopPropagation
+Evita la propagación adicional del evento actual en las fases de captura y bubbling.
+https://developer.mozilla.org/es/docs/Web/API/Event/stopPropagation
