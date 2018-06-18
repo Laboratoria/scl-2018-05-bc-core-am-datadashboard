@@ -1,0 +1,85 @@
+body {
+    background-color: #FFE521;
+  }
+  
+  .container {
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .logoLaboratoria {
+    margin-left: 10px;
+  }
+  
+  .tag {
+    margin: inherit;
+    padding: inherit;
+    display: inherit;
+    max-height: inherit;
+  }
+  
+  .active .tag {
+    display: block;
+  }
+  
+  .tag p {
+    margin: inherit;
+    padding: inherit;
+    max-height: inherit;
+    font-size: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+  }
+  
+  .whiteCard {
+    background-color: white;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    transition: 0.5s ease-out;
+  }
+  
+  .active {
+    max-height: 10000px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+  }
+  
+  .site {
+    background-color: #56F89A;
+  }
+  .site:hover{
+    background-color: rgba(135, 238, 178, 0.993)
+  }
+  .generation {
+    background-color: #FFE521;
+  }
+  .generation:hover{
+    background-color: rgb(241, 226, 109);
+  }
+  
+  .turn {
+    background-color: #56F89A;
+  }
+  .turn:hover {
+    background-color: rgba(135, 238, 178, 0.993) ;
+  }
+  .student {
+    padding: 0;
+    margin: inherit;
+    max-height: inherit;
+  }
+  
+  .studentProgress {
+    background-color: #FF009E;
+    margin: 0;
+    padding: inherit;
+    max-height: inherit;
+  }
+  
+  .studentProgress p {
+    margin: 0;
+  }
+ 
