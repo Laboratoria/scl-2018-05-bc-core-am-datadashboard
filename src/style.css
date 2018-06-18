@@ -11,18 +11,18 @@ body {
     margin-left: 10px;
   }
   
-  .element {
+  .tag {
     margin: inherit;
     padding: inherit;
     display: inherit;
     max-height: inherit;
   }
   
-  .active .element {
+  .active .tag {
     display: block;
   }
   
-  .element p {
+  .tag p {
     margin: inherit;
     padding: inherit;
     max-height: inherit;
@@ -41,7 +41,7 @@ body {
   }
   
   .active {
-    max-height: 1000px;
+    max-height: 10000px;
     padding: 10px;
     margin: 10px;
     font-size: 30px;
