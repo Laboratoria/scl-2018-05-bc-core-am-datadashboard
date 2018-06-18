@@ -33,10 +33,10 @@
     text-align: center;
     display: flex;
     align-items: stretch;
-    width: 23%;
+    width: 100%;
 }  
 #sidebar {
-    
+    background-color: #FFE521;
 }
 
 #sidebar.active {
