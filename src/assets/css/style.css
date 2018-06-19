@@ -11,10 +11,21 @@ body {
 
 #upBar {
   background-color: #56F89A;
-  padding: 0.5em;
+  display: flex;
 }
 
 #imgPersonal {
   border-radius: 100%;
   
+}
+
+.breadcrumb {
+  background-color: #56F89A;
+  color: black;
+
+}
+
+.btn-primary {
+  background-color: #FF009E;
+  color: black;
 }
