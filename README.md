@@ -1,5 +1,7 @@
 # Data Dashboard
 
+## Introducción
+
 En Laboratoria, las Training Managers (TMs) hacen un gran trabajo al analizar la
 mayor cantidad de datos posibles respecto al progreso de las estudiantes para
 apoyarlas en su aprendizaje.
@@ -11,71 +13,50 @@ de aprendizaje (lecturas, videos, ejercicios y quizzes) en un sistema que
 llamamos LMS (Learning Management System). El LMS acumula data sobre quién
 leyó qué, qué ejercicios se han completado, los resultados de los quizzes, etc.
 
-A pesar de que la data de progreso del LMS (ej. lecturas leídas, ejercicios
-  completados, nota en quizzes, etc.) no impacta directamente la evaluación de
-  una estudiante, sí es una pieza de información relevante que las TMs
-  quisieran visualizar para tener un mejor entendimiento de cómo va cada
-  estudiante en su proceso de aprendizaje.
+A pesar de que la data de progreso del LMS (ej. lecturas leídas, ejercicios completados, nota en quizzes, etc.) no impacta directamente la evaluación de
+una estudiante, sí es una pieza de información relevante que las TMs
+quisieran visualizar para tener un mejor entendimiento de cómo va cada
+estudiante en su proceso de aprendizaje.
 
  Así, el reto de este proyecto es crear una interfaz donde las TMs puedan
 _ver_ y _usar_ la data de progreso del LMS. Para ello, creamos un
 **data dashboard**.
 
-## Introducción
-
 ![Alt text](Documents/banner.png?raw=true "Datadashboard")
 
+## Proceso de Diseño
 
+![Alt text](Documents/proceso-de-diseño.png?raw=true "Proceso de Diseño")
 
+#### 1) Descubrimiento e Investigación
+La primera etapa en nuestro proceso de diseño fue la investigación, tuvimos una entrevista con la Training Manager, que en este caso es nuestro cliente, investigamos haciendole preguntas directas, como que tipo de información necesita ver de las alumnas dependiendo la sede, dependiendo el cohort y dependiendo el progreso de cada alumna.
+Lo cual nos permitió visualizar el tipo de información que necesita el cliente.
+El objetivo principal del cliente es poder visualizar el progreso de las alumnas, quienes van bien y quienes no tanto para poder ayudarlas. Tambien poder comparar la cantidad de alumnas que hay en cada cohort de manera rapida y ordenada.
 
-#### 1) Definición del producto
+#### 2) Analisis de Datos
+Con los datos proporcionados por el cliente analizamos la posible solución de elaborar un dashboard con información concentrada en un sidebar con un buscador y un menú de 2 pestañas, en una informacion por cohorts mostrandolos con la cantidad de alumnas inscritas en el cohort y con un buscador por cohort y la otra pestaña para los datos de las alumnas, puede elegir una alumna en especifico del listado y se despliega la información de esta, su progreso general y el cohort en el que tiene el progreso, con la facilidad de ordenarlo por orden ascendente o descendente, todo esto en la menor cantidad de clicks posibles.
 
-En el `README.md` cuéntanos cómo pensaste y te acercaste a los usuarios al
-desarrollar tu producto (Tip: entrevistas) y cuál fue tu proceso para definir
-el producto final a nivel de experiencia y de interfaz. Es importante que
-detalles:
+#### 3) Diseño de la solución (sketch prototipo de baja fidelidad)
 
-* Quiénes son los principales usarios de producto.
-* Cuáles son los objetivos de estos usarios en relación con el producto.
-* Cuáles son los datos más relevantes que el usuario quiere ver en la interfaz y
-  por qué. Cómo los descubriste.
-* Cuándo revisa normalmente estos datos
-* Cómo crees que el producto les está resolviendo sus problemas.
-* Cómo fue tu proceso de diseño.
+Para plazmar las ideas del brainstorming diseñamos unos wireframes basicos en base a lo solicitado por el cliente.
 
-#### 2) Sketch de la solución (prototipo de baja fidelidad)
+Luego hicimos un scketch de baja fidelidad para ver de forma más clara como organizariamos las tareas e información que requiere el cliente.
+![Alt text](Documents/1.png?raw=true "Login")
+![Alt text](Documents/2.png?raw=true "Sedes")
+![Alt text](Documents/3.png?raw=true "Cursos")
+![Alt text](Documents/4.png?raw=true "Alumna")
 
-Debes realizar un Sketch (usando papel y lápiz) de tu solución, tomarle una
-foto, subirla a tu repositorio y hacer mención del sketch en tu `README.md`.
+#### 4) Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)
+![Alt text](Documents/login.png?raw=true "Login")
+![Alt text](Documents/Sedes.png?raw=true "Sedes")
+![Alt text](Documents/Cursos.png?raw=true "Cursos")
+![Alt text](Documents/Alumna.png?raw=true "Alumna")
+Por ultimo realizamos el prototipado de alta fidelidad en Figma para ver mejor la solución que nos planteamos.
 
-#### 3) Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)
-
-Realizamos un prototipado de alta fidelidad en Figma
 https://www.figma.com/file/aueKPF43QJgxicRux8LFzij7/Data-Dashboard
 
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
+#### 5) Implementación
 
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-Como mencionamos, **no** es necesario que construyas la interfaz tal como la
-has diseñado. Tendrás un tiempo limitado para hackear, así que deberás priorizar.
-
-Sin embargo, como mínimo, tu implementación debe:
-
-1. Permitir al usuario seleccionar un cohort de una lista de cohorts.
-2. Al seleccionar un cohort:
-   - Listar las alumnas de ese cohort
-   - Para cada alumna:
-     + Calcular porcentaje de completitud de todos los _cursos_.
-     + Calcular grado de completitud de _lecturas_, _ejercicios autocorregidos_,
-       y _quizzes_.
-   - Ordenar alumnas por completitud _general_ (porcentaje consumido/completado
-     de todos los cursos del cohort en cuestión), de _lecturas_, _ejercicios
-     autocorregidos_ y _quizzes_.
-   - Filtrar/buscar alumnas por nombre.
-3. Visualizarse sin problemas desde distintos tamaños de pantallas: móviles,
-   tablets y desktops.
-4. Incluir pruebas unitarias.
-
-Es importante que tu interfaz, a pesar de ser una versión mínima de tu ideal,
-igual debe seguir los fundamentos de visual design, como: contraste,
-alineación, jerarquía, entre otros.
+Desarrollamos el datadashboard remarcando la funcionalidad de los requerimientos minimos que solicitó el cliente, en este caso que se pueda seleccionar un cohort de una lista de cohorts, buscar alumnas por nombre, calcular grado de completitud de los cursos, ordenar alumnas por completitud general y especifico de lecturas, ejercicios autocorregidos y quiz.
+La aplicación funciona sin problemas en distintos tamaños de pantallas: móviles, tablets y desktops.
+Se incluyen pruebas unitarias.
