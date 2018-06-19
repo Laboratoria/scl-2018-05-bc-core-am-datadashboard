@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
+    <!-- item login -->
+    <form class="dropdown-menu p-4">
+      <div class="form-group">
+        <label for="exampleDropdownFormEmail2">Usuario</label>
+        <input type="email" class="form-control" id="inputUser" placeholder="nombre@laboratoria.la">
+      </div>
+      <div class="form-group">
+        <label for="exampleDropdownFormPassword2">Contraseña</label>
+        <input type="password" class="form-control" id="inputPass" placeholder="Contraseña">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+        <label class="form-check-label" for="dropdownCheck2">
+          Recuerdame
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary" id="btnLogin">Ingresar</button>
+    </form>
+
+
     <!--aqui empieza el div de la barra lateral-->
     <div class="container-fluid">
       <div class="row">
@@ -54,7 +74,7 @@
       <!-- inicio de data dashboard -->
       <div class="col-10">
         <div id="upBar" class="conteiner-fluid flex-row d-inline-flex d-none d-sm-block">
-          <!-- migas de pan -->         
+          <!-- migas de pan -->        
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
