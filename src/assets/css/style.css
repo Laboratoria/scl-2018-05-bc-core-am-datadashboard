@@ -26,9 +26,14 @@ body {
   display: flex;
 }
 
+#nameUser {
+  font-size: 25px;
+}
+
 #imgPersonal {
   border-radius: 100%;
-  
+  width: 80%;
+  border: 10%;
 }
 
 .breadcrumb {
