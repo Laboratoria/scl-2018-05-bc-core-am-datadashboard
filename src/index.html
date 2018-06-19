@@ -32,47 +32,55 @@
     <!--aqui empieza el div de la barra lateral-->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-2 d-none d-sm-block" id="navBar">
-          <div id="perfil">
-            <!--imagen de perfil-->
-            <img src="assets/img/vale.jpg" alt="foto de perfil" class="img-thumbnail" id="imgPersonal">
-            <p>Valentina Smith</p>
-          </div>
-          <!--barra de busqueda-->
-          <div id="buscador">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Busqueda por alumna" aria-label="Busqueda por alumna" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+        <div class="col-2 pos-f-t d-none d-sm-block" id="navBar">        
+          <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            
+            <div id="perfil">
+              <!--imagen de perfil-->
+              <img src="assets/img/vale.jpg" alt="foto de perfil" id="imgPersonal">
+              <p id="nameUser">Valentina Smith</p>
             </div>
+            <!--barra de busqueda-->
+            <div id="buscador">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Busqueda por alumna" aria-label="Busqueda por alumna" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div id="sedes">
-            <p>Sedes</p>
-            <p>Santiago <!--checkbox-->
-              <input type="checkbox" aria-label="Checkbox for item"></p>
-            <p>Lima <!--checkbox-->
-              <input type="checkbox" aria-label="Checkbox for item"></p>
-            <p>Cuidad de México <!--checkbox-->
-              <input type="checkbox" aria-label="Checkbox for item"></p>
-            <p>Sao Paulo <!--checkbox-->
-              <input type="checkbox" aria-label="Checkbox for item"></p>
-          </div>
-          <div id="año">
-            <p>Año</p>
-            <p>2018 <!--checkbox-->
-              <input type="checkbox" aria-label="Checkbox for item"></p>
-            <p>2017 <!--checkbox-->
-              <input type="checkbox" aria-label="Checkbox for item"></p>
-            <p>2016 <!--checkbox-->
-              <input type="checkbox" aria-label="Checkbox for item"></p>
-          </div>
-          <div id="btnBuscar divBoton" >
-            <button type="button" class="btn btn-primary">Buscar</button>
-          </div>  
-        </div>
-        <!--cierre del div de la barra lateral-->
-      <!-- inicio de data dashboard -->
+            <div id="sedes">
+              <p>Sedes</p>
+              <p>Santiago <!--checkbox-->
+                <input type="checkbox" aria-label="Checkbox for item"></p>
+                <p>Lima <!--checkbox-->
+                  <input type="checkbox" aria-label="Checkbox for item"></p>
+                  <p>Cuidad de México <!--checkbox-->
+                    <input type="checkbox" aria-label="Checkbox for item"></p>
+                    <p>Sao Paulo <!--checkbox-->
+                      <input type="checkbox" aria-label="Checkbox for item"></p>
+                    </div>
+                    <div id="año">
+                      <p>Año</p>
+                      <p>2018 <!--checkbox-->
+                        <input type="checkbox" aria-label="Checkbox for item"></p>
+                        <p>2017 <!--checkbox-->
+                          <input type="checkbox" aria-label="Checkbox for item"></p>
+                          <p>2016 <!--checkbox-->
+                            <input type="checkbox" aria-label="Checkbox for item"></p>
+                          </div>
+                          <div id="btnBuscar divBoton" >
+                            <button type="button" class="btn btn-primary">Buscar</button>
+                          </div>  
+                        </div>
+                      </nav>
+                        <!--cierre del div de la barra lateral-->
+                        <!-- inicio de data dashboard -->
       <div class="col-10">
         <div id="upBar" class="conteiner-fluid flex-row d-inline-flex d-none d-sm-block">
           <!-- migas de pan -->        
