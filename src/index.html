@@ -2,39 +2,86 @@
 <html>
   <head>
     <meta charset="utf-8">   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0,user-scalable=no">
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="style.css" />
-   	<title>Data Dashboard</title>
-    <link href = "https://fonts.googleapis.com/css?family= Song + Myung " rel = "stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0">
+    <title>Data Dashboard</title>
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- link icono -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
+    <!-- <link rel="stylesheet" href="grid.css"> -->
+    <!-- mi estilo css -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <nav class="menu">
-      <div class="col-3" >
-        <img src="../src/img/Laboratoria-1.png" >
+  <body> 
+    <!-- logo y texto -->
+    <div class="row">
+      <div class="col-sm-3" id="logo">
+        <img src="../src/img/logo.png">
       </div>
-      <div class="col-9">
-        <h1 class="titulo">Alumnas</h1>
+      <div class="col-sm-9 title">
+        <h1>Data Dashboard</h1>
       </div>
-    </nav>
-    <div class="container">
+    </div> 
+    <!-- fin de logo y texto -->
+    <!-- Inicio menú -->
       <div class="row">
-        <div class="col-3 home">
-          <br>
-          <li><i class="icon far fa-user"></i><a href="" class="log">Valentina S.</a></li>
-          <br>
-          <li><i class="icon fas fa-home"></i><a href="" class="ini">  Inicio</a></li>
-          <br>
-          <li><i class="icon fas fa-book-open"></i><a href="" class="coh">Cohorts</a></li>
-          <br>
-          <li><i class="icon fas fa-cog"></i><a href="" class="conf">Configuración</a></li>
-          <li><i class="icon fas fa-sign-out-alt"></i><a href="" class="close">Cerrar Sección</a></li>
+      <div class="col-3 home">
+      <br>
+      <li><i class="icon far fa-user"><a href="#" class="user"> Valentina S. </a></i></li>
+        <br>
+        <li><i class="icon fas fa-home"><a href="#" class="ini"> Inicio </a></i></li>
+        <br>
+        <li><i class="icon fas fa-book-open"><a href="#" class="coho"> Cohorts</a></i></li>
+        <br>
+        <li><i class="icon fas fa-cog"><a href="#" class="conf"> Configuración </a></i></li>
+        <hr>
+        <li><i class="icon fas fa-sign-out-alt"><a href="#" class="close"> Cerrar Sección </a></i></li>
+      </div>
+      <!-- fin del menú -->
+      <!-- inicio de los botones -->
+      <div class="col-9 menu">Cohorts
+      <hr>
+        <div class="col-6 per">
+          <p>PERU - LIMA</p>
+          <form class="form-inline justify-content-left">
+            <input class="form-control sm-2" type="text" placeholder="Buscar" size="15">
+            <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+        <div class="col-6">
+          <p>CHILE - SANTIAGO</p>
+          <form class="form-inline justify-content-left">
+            <input class="form-control sm-2" type="text" placeholder="Buscar" size="15">
+            <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+        <div class="col-6">
+          <p>México - Ciudad de México</p>
+          <form class="form-inline justify-content-left">
+            <input class="form-control sm-2" type="text" placeholder="Buscar" size="15">
+            <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+        <div class="col-6">
+          <p> MÉXICO - GUADALAJARA</p>
+          <form class="form-inline justify-content-left">
+            <input class="form-control sm-2" type="text" placeholder="Buscar" size="15">
+            <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+        <div class="col-6">
+          <p>BRASIL - SAO PAULO</p>
+          <form class="form-inline justify-content-left">
+            <input class="form-control sm-2" type="text" placeholder="Buscar" size="15">
+            <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
+          </form>
         </div>
       </div>
+      <!-- fin del col-9 -->
     </div>
+    <!-- fin del col-3 -->
 
-    <script src="main.js"></script>
+
+   <script src="main.js"></script>
   </body>
 </html>

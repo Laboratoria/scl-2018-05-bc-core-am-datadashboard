@@ -1,42 +1,27 @@
-/*.container{
-  background-color: aquamarine;
-  height: 600px;
+.col-sm-3{
+  background-color: white;
 }
-
-.row{
-  border: 2px solid red;
-  height: 100px;
-}*/
-.menu{
-  border: 1px solid #bdbdbd;
-  height: 100%;
-  margin: 0%;
-}
-
-.titulo{
-  background-color: #ffc107;
+#logo{
   text-align: center;
-  color: black;
-  padding: 4%;
-  font-family:'Butterfly Kids', cursive;
 }
-.img{
-  background-color: #ffffff;
-  padding: 10%;
-  margin: 0%;
+.title{
+  background-color: #ffc107;
 }
-img{
-  height: 99px;
-  
+h1{
+  text-align: center;
 }
-.primera_section{
-  text-align: justify; 
-  font-size:20px;
+
+body,html{
+    height: 100%;
 }
+.home{
+   background-color: #6c757d14;
+}
+
 .home a{
   color: black;
   display: inline;
-  padding: 5%;
+  /*padding: 2%;*/
   margin: 0%;
   text-decoration: none;
 }
@@ -48,8 +33,13 @@ ul{
   height: 100%;
 }
 li{
-    list-style-type: none;
-    font-family: 'Song Myung', serif;
-    font-size: 40px;
-    padding: 4%;
+  list-style-type: none;
+  font-family: 'Song Myung',serif;
+  font-size: 35px;
+  padding: 8%;
+}
+.menu{
+  padding: 2em;
+    color: #6c757d;
+    font-size: larger;
 }
