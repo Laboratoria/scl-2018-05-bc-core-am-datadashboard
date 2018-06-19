@@ -32,8 +32,7 @@
                       <form class="form-inline justify-content-left">
                           <input class="form-control sm-2" type="text" placeholder="Buscar" size="15">
                           <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
-                      </form>
-                        
+                      </form> 
                      <!--MENU-->
                       <form>
                         <div class="form-group row justify-content-center">
@@ -52,18 +51,25 @@
           <section class="col-sm-9"> <!--COL PARA INFO--> 
         <!--SECCION DATOS ALUMNAS-->
           <section id="alumnas">
-              <button type="button" id="conect">boton</button>
-              <div id="root"></div>
-                      <h2>Alumna: Juana Paola</h2>
-                      <div class="form-group">
-                              <label for="exampleFormControlSelect1">Ordenar</label>
-                              <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Ascendente</option>
-                                <option>Descendente</option>
+              <section class="col-sm-6">
+                      <section class="form-group">
+                              <!--Dropdown con el listado de todas las alumnas-->
+                              <label for="exampleFormControlSelect1">Listado de Alumnas</label>
+                              <select class="form-control" id="nombreAlumna">
+                                <option id= "optionAlumna">Elegir Alumna</option>
+                                
                               </select>
-                            </div>       
+                      </section>
+              </section>
+              <section class="col-sm-6">
+                      <form class="form-inline justify-content-left">
+                          <input class="form-control sm-2" type="text" placeholder="Buscar" size="15" id="buscarAlumna">
+                          <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
+                      </form>
+                </section>
+          <h2>Nombre Alumna</h2>       
           <div class="table-responsive-sm">
-              <table class="table">
+              <table class="table" id="table">
                   <thead style="background-color:#FF009E; color:white;">
                     <tr>
                       <th scope="col">#</th>
@@ -133,8 +139,8 @@
         </section>
       </div> <!--FIN DE ROW -->
     </section> <!--FIN DE GRID-->
-    <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
