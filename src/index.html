@@ -11,39 +11,43 @@
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<div class="container container-login" style="display: none">
+	<!-- <button id="btnUsers">Nombres Alumnas</button>
+	<button id="btnCourse">Cursos consola</button>
+	<div id="root"></div>
+	<div id="root2"></div> -->
+	<div class="container container-login" id="login">
 		<div class="row justify-content-center mt-5 pt-5">
 			<div class="col-md-5">
 				<div class="img-logo">
 					<img src="logo.png">
 				</div>
 				<h1 class="display-4 text-center mt-3 mb-5">Login</h1>
-				<form>
+				<section>
 					<div class="row form-group">
 						<label for="usuario" class="col-form-label col-md-3">Usuario:</label>
 						<div class="col-md-9">
-							<input type="text" name="usuario" value="" id="user-login" class="form-control" required placeholder="Ingrese Nombre...">
+							<input type="text" name="usuario" id="user-login" class="form-control" required placeholder="Ingrese Nombre...">
 						</div>
 					</div>
 					<div class="row form-group">
 						<label for="password" class="col-form-label col-md-3">Contraseña:</label>
 						<div class="col-md-9">
-							<input type="password" name="password" value="" id="password-login" class="form-control" required placeholder="Ingrese Contraseña...">
+							<input type="password" name="password" id="password-login" class="form-control" required placeholder="Ingrese Contraseña...">
 						</div>
 					</div>
 					<div class="col-md-12 text-center">
-						<button type="submit" class="btn btn-warning mt-3 mb-3">Ingresar</button>
+						<button type="submit" class="btn btn-warning mt-3 mb-3" id="btnLogin">Ingresar</button>
 						<p  class="text-center">
 							<a href="#">¿Olvidaste tu contraseña?</a>
 						</p>
 					</div>
-				</form>
+				</section>
 			</div>
 		</div>
 	</div>
 	<!-- PANEL DE BUSQUEDA -->
 	<!-- Logo Banner -->
-	<div class="container" style="display: none">
+	<div class="container divDisplayNone" id="containerSearch">
 		<section class="row justify-content-center">
 			<div class="col-sm-3 p-2">
 				<img src="logo.png" class="img-fluid">
@@ -137,7 +141,7 @@
 	</div>
 
 	<!-- PERFIL ALUMNA -->
-	<div class="container">
+	<div class="container divDisplayNone" id="containerAlumna">
 		<section class="row justify-content-center">
 			<div class="col-sm-3 p-2">
 				<img src="logo.png" class="img-fluid">
@@ -155,7 +159,7 @@
 		<!-- Buscador de alumnas por id -->
 		<section class="row mt-4">
 			<div class="col-sm-6">
-				<p class="lead">Perfil Alúmna</p>
+				<p class="lead">Perfil Alumna</p>
 			</div>
 			<div class="col-sm-6">
 				<a href="#" class="lead float-right"><i class="fas fa-arrow-left"></i> Regresar al Panel de busqueda</a>
@@ -164,9 +168,9 @@
 		<hr>
 
 	</div>
-	<!-- Jquery Bootstrap-->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<!-- JavaScript Bootstrap- -->
+	<!-- Jquery, popper y js Bootstrap-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 <script src="main.js"></script>

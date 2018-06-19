@@ -1,4 +1,4 @@
-.container-login{
+.codivntainer-login{
 	display:;
 }
 .img-logo img{
@@ -16,3 +16,10 @@
 	background-color: #FFC107;
 	border-radius: 5px;
 }
+.divDisplayNone{
+	display: none;
+}
+.divDisplayBlock{
+	display: block;
+}
+
