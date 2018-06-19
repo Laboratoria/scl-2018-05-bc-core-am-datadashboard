@@ -165,6 +165,9 @@ li{
 /* Small devices (celulares máx 600px) */
 @media only screen and (max-width: 600px) {
 /*Logo desaparece*/
+body{
+    background-color: white;
+}
 .logo{
     display: none;
 }
@@ -219,7 +222,15 @@ li{
 .icon {
     display: none;
 }
-
+.labPhoto{
+    background-size: cover;
+    opacity: 0.5;
+    filter: blur(1px);
+    margin: 0px;
+    padding: 0%;
+    top: 0%;
+    height: auto;
+}
 }
 
 
