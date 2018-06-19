@@ -26,4 +26,8 @@
     "indent": [1, 2],
     "no-array-constructor": 1
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> upstream/master
