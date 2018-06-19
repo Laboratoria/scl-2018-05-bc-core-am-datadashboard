@@ -12,6 +12,7 @@
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    display: table;
   }
   
   .row:before, .row:after {
@@ -23,7 +24,7 @@
   [class*="col-"] {
     float: left;
     min-height: 7px;
-    padding: 12px; /* gutters */
+    padding: 0px; /* gutters */
   }
   
   /*
