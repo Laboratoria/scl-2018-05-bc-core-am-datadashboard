@@ -10,3 +10,34 @@
 #barraSuperior {
   background-color: #FFE521;
 }
+body {
+  font-family: 'Open Sans';
+}
+#navBar {
+  background-color: #FFE521;
+}
+
+.col-10 {
+  padding: 0%;
+}
+
+#upBar {
+  background-color: #56F89A;
+  display: flex;
+}
+
+#imgPersonal {
+  border-radius: 100%;
+  
+}
+
+.breadcrumb {
+  background-color: #56F89A;
+  color: black;
+
+}
+
+.btn-primary {
+  background-color: #FF009E;
+  color: black;
+}
