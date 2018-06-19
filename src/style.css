@@ -1,0 +1,45 @@
+.col-sm-3{
+  background-color: white;
+}
+#logo{
+  text-align: center;
+}
+.title{
+  background-color: #ffc107;
+}
+h1{
+  text-align: center;
+}
+
+body,html{
+    height: 100%;
+}
+.home{
+   background-color: #6c757d14;
+}
+
+.home a{
+  color: black;
+  display: inline;
+  /*padding: 2%;*/
+  margin: 0%;
+  text-decoration: none;
+}
+.home a:hover{
+  background-color: #ffc107;
+}
+ul{
+  list-style-type: none;
+  height: 100%;
+}
+li{
+  list-style-type: none;
+  font-family: 'Song Myung',serif;
+  font-size: 35px;
+  padding: 8%;
+}
+.menu{
+  padding: 2em;
+    color: #6c757d;
+    font-size: larger;
+}
