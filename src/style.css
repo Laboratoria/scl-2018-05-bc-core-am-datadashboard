@@ -164,10 +164,11 @@ li{
 
 /* Small devices (celulares máx 600px) */
 @media only screen and (max-width: 600px) {
-/*Logo desaparece*/
+
 body{
     background-color: white;
 }
+/*Logo desaparece*/
 .logo{
     display: none;
 }
@@ -182,6 +183,10 @@ body{
     height: 4em;
     border: 1px solid #BDBDBD;
 }
+.profile{
+    text-align: right;
+}
+/*Menu chiquitito*/
 .menu {
     width: 100%;
     margin-top: 60%; 
@@ -218,10 +223,11 @@ li{
     border: 1px solid #BDBDBD;
     text-align: center;
 }
-
+/*desaparecen los iconos*/
 .icon {
     display: none;
 }
+/*foto en auto*/
 .labPhoto{
     background-size: cover;
     opacity: 0.5;
@@ -236,5 +242,100 @@ li{
 
 /* Small devices (tablets) */
 @media only screen and (max-width: 768px) {
+    .logo{
+        background-color: #ffffff;
+        padding: 10%;
+        margin: 0%; 
+        background-position: center;
+        border-left: 1px solid #BDBDBD;
+        border-top: 1px solid #BDBDBD;
+    }
+    /*Para titulos*/
+    .yellowC {
+        background-color: #FFE521;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 4%;
+        height: 4.5em;
+        border: 1px solid #BDBDBD;
+    }
+    .photo1{
+        border-radius: 50%;
+        text-align: center;
+        width: 50%;
+        height: 30%;
+        margin-left: 5%;
+    }
+    /*Perfil con nombre de valentina*/
+    .profile {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 15px;
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%; 
+        margin-right: 5%;
+        float: right;
+    }
+    .menuGrey{
+        height: auto;
+    }
+    /*Menu más o menos chiquitito*/
+    .menu {
+        width: 100%;
+        margin-top: 60%;
+    }
+    
+    .menu a {
+        color: black; 
+        display: inline;
+        width: 100%;
+        padding: 5%;
+        margin: 0%; 
+        text-decoration: none; 
+    }
+    
+    .menu a:hover {
+        background-color: #56F89A; 
+    }
+    
+    .current {
+        background-color: #FFE521; 
+    }
+    
+    ul {
+        list-style-type: none;
+        height: 100%;
+    }
+    
+    li{
+        list-style: none;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 14px;
+        padding: 5%;
+        height: 100%;
+        border: 1px solid #BDBDBD;
+        text-align: center;
+    }
+    .icon {
+        font-size: 10px;
+        color: gray;
+        padding-right: 3%; 
+        display: inline-block;
+        text-align: left;
+        border-bottom: none;
+    }
+    
+    /*foto en auto*/
+    .labPhoto{
+        background-size: cover;
+        opacity: 0.5;
+        filter: blur(1px);
+        margin: 0px;
+        padding: 0%;
+        top: 0%;
+    }
+    }
+    
 
-} 
