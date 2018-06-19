@@ -41,22 +41,27 @@ Con los datos proporcionados por el cliente analizamos la posible solución de e
 Para plazmar las ideas del brainstorming diseñamos unos wireframes basicos en base a lo solicitado por el cliente.
 
 Luego hicimos un scketch de baja fidelidad para ver de forma más clara como organizariamos las tareas e información que requiere el cliente.
-![Alt text](Documents/prototipo balsamic/1.png?raw=true "Login")
-![Alt text](Documents/prototipo balsamic/2.png?raw=true "Sedes")
-![Alt text](Documents/prototipo balsamic/3.png?raw=true "Cursos")
-![Alt text](Documents/prototipo balsamic/4.png?raw=true "Alumna")
+![Alt text](Documents/prototipoBalsamic/1.png?raw=true "Login")
+![Alt text](Documents/prototipoBalsamic/2.png?raw=true "Sedes")
+![Alt text](Documents/prototipoBalsamic/3.png?raw=true "Cursos")
+![Alt text](Documents/prototipoBalsamic/4.png?raw=true "Alumna")
 
 #### 4) Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)
-![Alt text](Documents/Prototipo Figma/login.png?raw=true "Login")
-![Alt text](Documents/Prototipo Figma/Sedes.png?raw=true "Sedes")
-![Alt text](Documents/Prototipo Figma/Cursos.png?raw=true "Cursos")
-![Alt text](Documents/Prototipo Figma/Alumna.png?raw=true "Alumna")
+![Alt text](Documents/PrototipoFigma/login.png?raw=true "Login")
+![Alt text](Documents/PrototipoFigma/Sedes.png?raw=true "Sedes")
+![Alt text](Documents/PrototipoFigma/Cursos.png?raw=true "Cursos")
+![Alt text](Documents/PrototipoFigma/Alumna.png?raw=true "Alumna")
 Por ultimo realizamos el prototipado de alta fidelidad en Figma para ver mejor la solución que nos planteamos.
 
 https://www.figma.com/file/aueKPF43QJgxicRux8LFzij7/Data-Dashboard
 
 #### 5) Implementación y Testing
 
+Nos organizamos con un trello, repartiendo las tareas principales en 3 sprints 
+
+https://trello.com/b/Sxp3jP45/datadashboard
+
 Desarrollamos el datadashboard remarcando la funcionalidad de los requerimientos minimos que solicitó el cliente, en este caso que se pueda seleccionar un cohort de una lista de cohorts, buscar alumnas por nombre, calcular grado de completitud de los cursos, ordenar alumnas por completitud general y especifico de lecturas, ejercicios autocorregidos y quiz.
+
 La aplicación funciona sin problemas en distintos tamaños de pantallas: móviles, tablets y desktops.
 Se incluyen pruebas unitarias.
