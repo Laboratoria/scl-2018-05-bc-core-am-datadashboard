@@ -98,7 +98,7 @@ li{
 
 /*Cerrar sesión*/
 .endS{
-    margin-top: 15%;
+    margin-top: 10%;
 }
 .endS a {
     color: black; 
@@ -123,42 +123,6 @@ li{
     top: 0%;
     height: 36em;
 }
-/*Cuadros de data dashboard*/
-.box{
-    margin: 1px solid rgb(168, 167, 167);
-    border-radius: 2%;
-    background-color: #F2F2F2;
-    width: 80%;
-    height: 50%;
-    font-family: 'Roboto Condensed', sans-serif;
-    padding: 5%;
-    margin: 3%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-}
-/*P dashboard*/
-.infoD{
-    font-size: 15px;
-}
-/*Botón de data dashboard*/
-.b-d{
-    background-color: #FFE521;
-    color: black;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    width: 20%;
-    padding: 1%;
-    margin: -1%;
-    float: right;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.b-d:hover{
-    background-color: #56F89A;
-    color: black;
-}
-
 
 /*RESPONSIVE*/
 
