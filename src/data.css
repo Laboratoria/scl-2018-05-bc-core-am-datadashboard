@@ -33,6 +33,25 @@
   background-color: #56F89A;
   color: black;
 }
+/*Caja de selección Cohort*/
+#select-cohort{
+  text-align: center;
+  border-radius: 20px;
+  background-color: #F2F2F2;
+  width: 80%;
+  height: 50%;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 5%;
+  margin: 3%;
+  margin-left: 10%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#select-input{
+  margin-top: 5%;
+  width: 50%;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 10%;
+}
 
 /*RESPONSIVE*/
 
