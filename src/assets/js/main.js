@@ -1,4 +1,3 @@
-
 window.onload = () => {
 	
 	//llamando al JSON con fetch
