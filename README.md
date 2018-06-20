@@ -6,7 +6,13 @@ El Dashboard brinda la información de las estudiantes de los cohorts por país.
 
 
 ## LOW FIDELITY SKETCH
-![](https://imagizer.imageshack.com/v2/800x600q90/921/yTQ32h.jpg)  |  ![](https://imagizer.imageshack.com/v2/800x600q90/924/te9NoX.jpg) | ![](https://imagizer.imageshack.com/v2/800x600q90/922/WRSQQw.jpg)
+![](https://imagizer.imageshack.com/v2/800x600q90/923/UrHoKb.jpg)
+![](https://imagizer.imageshack.com/v2/800x600q90/921/Q7wn7N.jpg) 
+![](https://imagizer.imageshack.com/v2/800x600q90/922/XoC3Pw.jpg)
+![](https://imagizer.imageshack.com/v2/800x600q90/921/3AtTq3.jpg)
+![](https://imagizer.imageshack.com/v2/800x600q90/924/f7uLk4.jpg)
+
+
 
 ## SECCIONES
 

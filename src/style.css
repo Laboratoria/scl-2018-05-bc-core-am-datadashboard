@@ -42,8 +42,7 @@
     display: inline-block;
     padding-top: 10%;
     padding-bottom: 10%; 
-    margin-right: 5%;
-    float: right;
+
 }
 
 /*Súper Menú*/
@@ -156,14 +155,6 @@ body{
     margin-top: 60%; 
 }
 
-.menu a {
-    color: black; 
-    display: inline;
-    width: 100%;
-    padding: 5%;
-    margin: 0%; 
-    text-decoration: none; 
-}
 
 .menu a:hover {
     background-color: #56F89A; 
@@ -302,4 +293,6 @@ li{
     }
     }
     
+
+ 
 
