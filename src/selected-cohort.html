@@ -4,98 +4,66 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="grid.css">
-    <link rel="shortcut icon" type="image/png" href="../src/assests/img/tru9y_wg_400x400.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
+    <!-- Fonts -->   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
+    <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    
+    <!-- Logo chiquitito -->
+    <link rel="shortcut icon" type="image/png" href="../src/assests/img/tru9y_wg_400x400.png"/>
+    <!-- Grilla -->    
+    <link rel="stylesheet" href="grid.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  
-     <!-- primer row -->
-     <section class="row">
+    <!-- Primer Row -->
+    <section class="row">
+      <section class="col-3">
+        <section class="logo"> <!-- Para Logo -->
+          <img src="../src/assests/img/logo_laboratoria-07_(2).png" alt="Logo Laboratoria">
+       </section>
+      </section>
+      <header class="col-9 yellowC">
+        <h1>BIENVENIDA</h1>
+      </header>
+      <!-- fin de primer row -->
+    </section> 
+    <!-- Segundo Row  -->
+    <section class="row">
         <!-- inicio columna 3 -->
-       <section class="col-3 menuGrey">
-          <section class="logo"> <!-- Para Logo -->
-            <img src="../src/assests/img/logo_laboratoria-07_(2).png" alt="Logo Laboratoria">
-          </section> <!-- Fin Logo -->
-
-          <section class="profile"><!-- Para nombre de perfil con foto --> 
-            <img class="photo1" src="../src/assests/img/picture.png" alt="foto de valentina">
-            <h3>Valentina Smith</h3>
-            <h5>valentina@mail.com</h5>            
-          </section><!-- fin de nombre perfil con foto -->
-
-          <!-- espacio para menú -->
-          <section class="menu">
-            <ul>
-             <li><i class="icon fas fa-home"></i><a href="index.html" class="current">INICIO</a></li>
-             <li><i class="icon fas fa-tachometer-alt"></i><a href="datadashboard.html"class="dashboard">DASHBOARD</a></li>
-             <li><i class="icon fas fa-book-open"></i><a href="#">CURSOS</a></li>
-             <li><i class="icon fas fa-cog"></i><a href="#">CONFIGURACIÓN</a></li>                            
-            </ul>
+      <section class="col-3 menuGrey">
+        <section class="profile"><!-- Para nombre de perfil con foto --> 
+          <img class="photo1" src="assests/img/vale_foto.jfif" alt="foto de valentina">
+          <h3>Valentina Smith</h3>
+          <h5>valentina@mail.com</h5>            
+      </section><!-- fin de nombre perfil con foto -->
+        <!-- espacio para menú -->
+      <nav class="menu" id="topNav">
+        <ul>
+          <li><a href="index.html" class="current"><i class="icon fas fa-home"></i>INICIO</a></li>
+          <li><a href="datadashboard.html"class="dashboard"><i class="icon fas fa-tachometer-alt"></i>DASHBOARD</a></li>
+          <li><a href="#"><i class="icon fas fa-book-open"></i>CURSOS</a></li>
+          <li><a href="#"><i class="icon fas fa-cog"></i>CONFIGURACIÓN</a></li>                       
+        </ul>
             <!-- cierre menú -->
-          </section>
+      </nav>
             <!-- Sección Cerrar Sesión-->
-           <section class="endS"> 
-              <li><i class="icon fas fa-sign-out-alt"></i><a href="#">Cerrar Sesión</a></li>
-              <!-- fin de sección Cerrar Sesión-->
-          </section>
+      <footer class="endS"> 
+        <li><a href="#"><i class="icon fas fa-sign-out-alt"></i>Cerrar Sesión</a></li>
+      </footer>         
+        <!-- fin de sección Cerrar Sesión-->
+    </section>
+    <!-- col 9 con datos -->
+    <section class="col-9">
+      <button id="names">Ver Más</button>
+      <!-- fin de col9 -->
+    </section>
 
-         <!-- fin de columna 3 -->
-        </section>
-
-
-
-
-
-
-            <!-- comienzo columna 9 de título -->
-        <section class="col-9 yellowC">
-            <h1>COHORT 1</h1>
-              <!-- final de columna 9 de título -->
-          </section>
-          <!-- inicio columna 9 seleccionar cohort --> 
-          <table id="general-data">
-              <tr>
-                <th>QUIZZES</th>
-                <th>RETOS</th> 
-                <th>CURSOS</th>
-              </tr>
-              <tr>
-                <td>5%</td>
-                <td>10%</td>
-                <td>56%</td>
-              </tr>
-              <tr>
-                <td>5%</td>
-                <td>10%</td>
-                <td>56%</td>
-              </tr>
-              <tr>
-                <td>5%</td>
-                <td>10%</td>
-                <td>56%</td>
-              </tr>
-            </table>
-            
-            <!-- final de columna 9 de seleccionar cohort -->
-          
-        </section>
-        
-          
-
-       <!-- fin de primer row -->
-     </section>
-    
-     <!-- comienzo de segundo row -->
-      <section class="row">
-       
-    
-    
-       <!-- final de segundo row -->
-     </section>
+     <!-- fin de segundo row -->
+   </section>
+  
+  
+     
   
     <script src="main.js"></script>
   </body>
