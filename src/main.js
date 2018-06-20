@@ -1,4 +1,5 @@
 window.onload = () => {
+	//LOGIN
 	const btnLoginOk = document.getElementById('btnLogin');
 	btnLoginOk.addEventListener('click', () => {
 		const loginUserOk = document.getElementById('user-login').value;
@@ -12,3 +13,11 @@ window.onload = () => {
 		}
 	});
 }
+
+
+
+
+
+
+
+
