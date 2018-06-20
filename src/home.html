@@ -1,63 +1,287 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
-    <title>Data Dashboard</title>
+    <title>Home</title>
   </head>
   <body>
-  <section class="home">
-    <!--NAVBAR HEAD-->
-      <div class="row justify-content-center">
-          <div class="col-sm">
-              <nav class="navbar navbar-light justify-content-center" style="background-color: #FFE521;" class="navbar">
-              <img src="../Documents/logo.png" id="logo" class="img-fluid" alt="Responsive image">
+    <section class="grid">
+      <div class ="row">
+        <!--SECCION NAVBAR-->
+          <nav class="navbar navbar-light justify-content-center" class="navbar">
+              <img src="../Documents/logo.png" id="logo" class="img-fluid" alt="Responsive image"> 
           </nav>
-              <!--<img src="../Documents/id.png" id="p2" class="img-fluid" alt="Responsive image"> -->
-          </div> 
-        </div>
-    <!--SIDEBAR--> 
-        <div class="row justify-content-center">  
-                    <div class="col-sm-3 justify-content-center" style="background-color: #FFE521;">
-                      <nav class="navbar navbar-light justify-content-center"  style="background-color: #FFE521; width: 100%; height: 100%;" class="navbar">
-                          <a class="navbar-brand"></a>
-                          <!--PIC USUARIO-->
-                          <img src="../Documents/id.png " id="pic" class="img-fluid" alt="Responsive image">
-                          <a class="navbar-brand justify-content-center" style="text-align: center;">Bienvenida Valentina</a>
-                          <!--BUSCADOR-->
-                          <form class="form-inline justify-content-left" style=" padding: 0.5em;">
-                              <input class="form-control sm-2" type="text" placeholder="Buscar" size="15">
-                              <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
-                            </form>
-                            
-                        <!--MENU-->
-                        <form>
-                            <div class="form-group row justify-content-center"style=" padding: 1.5em;">
-                              <div class="col-sm-12">
-                                  <div class="btn-group-vertical justify-content-center" role="group" aria-label="Basic example">
-                                      <button type="button" class="btn btn-secondary justify-content-center" style="color: #333333; font-size: 1m ;font-weight:bold;font-family:Arial; background-color: #FFE521; border:#FFE521 ">Home</button>
-                                      <button type="button justify-content-center" class="btn btn-secondary" style="color: #333333; font-size: 1m ;font-weight:bold;font-family:Arial; background-color: #FFE521; border:#FFE521" >Alumnas</button>
-                                      <button type="button justify-content-center" class="btn btn-secondary "style="color: #333333; font-size: 1m ;font-weight:bold;font-family:Arial; background-color: #FFE521; border:#FFE521">Cursos</button>
-                                    </div>
+        <!--SECCION SIDEBAR-->
+          <section class="col-sm-3"> <!--COL PARA SIDEBAR-->  
+              <section class="wrapper"> 
+                  <nav class="navbar navbar-light" class="navbar" id="sidebar">
+                      <a class="navbar-brand"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      <div class="content" id="navbarSupportedContent" >
+                      <!--PIC USUARIO-->
+                        <img src="../Documents/id.png " id="pic" class="img-fluid" alt="Responsive image">
+                        <a class="navbar-brand justify-content-center">Bienvenida Valentina</a>
+                      <!--BUSCADOR-->
+                      <form class="form-inline justify-content-left">
+                          <input class="form-control sm-2" type="text" placeholder="Buscar" size="15">
+                          <button class="btn btn-outline-success sm-0" type="submit">Buscar</button>
+                      </form> 
+                     <!--MENU-->
+                      <form>
+                        <div class="form-group row justify-content-center">
+                              <div class="btn-group-vertical " role="group" aria-label="Basic example">
+                                  <button type="button" class="btn btn-secondary" id="btnHome">Home</button>
+                                  <button type="button" class="btn btn-secondary" id="btnAlumnas" >Alumnas</button>
+                                  <button type="button" class="btn btn-secondary " id="btnCohorts">Cohorts</button>
                               </div>
-                            </div>
-                            
-                          </form>
-                         <!--img-->
-                         <img src="../Documents/braquetsRosa.png " id="pic" class="img-fluid" alt="Responsive image">
-                        </nav>
+                              <img src="../Documents/braquetsRosa.png " id="pic" class="img-fluid" alt="Responsive image">
+                        </div> 
+                      </form>
                     </div>
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-3"></div>               
-        </div>
-  </section> <!--FIN DE HOME-->
-  <section class="estudiantes">
-
-  </section>
-    <script src="main.js"></script> 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+                  </nav>
+                </section>
+          </section>
+          <section class="col-sm-9 justify-content-center"> <!--COL PARA INFO--> 
+              <!--SECCION DATOS GENERALES-->
+              <section id="home">
+                  <!-- <section class="col-sm">-->
+                  <!---selector de sedes -->
+                  <section id="barra-sedes">
+                    <select id="sedes"  title="seleccion de sedes"> 
+                      <option value="seleccion" hidden="">Selecciona una Sede</option>
+                      <option value="CDMX">Ciudad de México</option>
+                      <option value="GDL">Guadalajara de México</option>
+                      <option value="LIM">Lima, Perú</option>
+                      <option value="SCL">Santiago de Chile</option>
+                    </select>
+                    <!--- seleccion para escoger el cohort -->
+                    <select id="cohort"  title="seleccion de cohort">
+                        <option value="---"></option>
+                    </select>
+                  </section> <!-- fin barra de sedes -->
+    
+                  <!-- inicio de la sección Alumnas en general  -->
+                  <section id="container"> <!-- inicio de la sección principal  -->
+                      <div class="alumnas-2" id="grafic-students">
+                        <h2>Alumnas</h2>
+                        <img src="/Documents/img/alumna.png" alt="ALUMNA Icon" style="width:128px;height:128px;">
+                        <div class="totalStudents">
+                          <p class="numTotal">0</p>
+                          <p>Alumnas<br>inscritas</p>
+                        </div>
+                        <div class="totalPercent">
+                          <p class="percent">0</p>
+                          <p class="percent">%</p>
+                          <p>Deserción</p>
+                        </div>
+                      </div> <!-- fin grafic students -->
+                    
+                      <div class="prom-general" id="grafic-promGen">
+                        <h2>Sede</h2>
+                        <img src="/Documents/img/sede.png" alt="SEDE Icon" style="width:128px;height:128px;">
+                        <div class="totalStudents">
+                          <p class="numTotal">0</p>
+                          <p>Alumnas<br>superan el promedio </p>
+                        </div>
+                        <div class="totalPercent">
+                          <p class="percent">0</p>
+                          <p class="percent">%</p>
+                          <p>del total</p>
+                        </div>
+                      </div> <!-- fin prom general -->
+                    
+                      <div class="logros-cursos">
+                        <h2>Cursos</h2>
+                        <img src="/Documents/img/cursos.png" alt="CURSOS Icon" style="width:128px;height:128px;">
+                        <div class="totalStudents">
+                          <p class="numTotal">0</p>
+                          <p>Alumnas que<br>completaron todos los cursos</p>
+                        </div>
+                        <div class="totalPercent">
+                          <p class="percent">0</p>
+                          <p class="percent">%</p>
+                          <p>del total</p>
+                        </div>
+                      </div> <!-- fin logros cursos -->
+                    
+                      <div class="comple-task">
+                        <h2>Task</h2>
+                        <img src="/Documents/img/task.png" alt="TASK Icon" style="width:128px;height:128px;">
+                        <div class="totalStudents">
+                          <p class="numTotal">0</p>
+                          <p>Alumnas que<br>completaron sus task</p>
+                        </div>
+                        <div class="totalPercent">
+                          <p class="percent">0</p>
+                          <p class="percent">%</p>
+                          <p> del total</p>
+                        </div>
+                      </div> <!-- fin complete task -->
+                    
+                  </section> <!-- fin de la sección container -->     
+                  <!-- </section>-->
+              </section> <!-- fin de la sección general  -->    
+              <!--SECCION DATOS ALUMNAS-->
+              <section id="datosAlumnas">
+                  <section class="col-sm-6">
+                          <section class="form-group">
+                                  <!--Dropdown con el listado de todas las alumnas-->
+                                  <label for="exampleFormControlSelect1">Listado de Alumnas</label>
+                                  <select class="form-control" id="nombreAlumna">
+                                      <option id= "optionAlumna">Elegir Alumna</option>
+                                  </select>
+                          </section>
+                  </section>
+                  <section class="col-sm-6">
+                          <form class="form-inline justify-content-left">
+                              <input class="form-control sm-2" type="text" placeholder="Buscar" size="15" id="buscarAlumna">
+                              <button class="btn btn-outline-success sm-0" type="submit" id="btnBuscar">Buscar</button>
+                          </form>
+                  </section>
+                  <article id="nombre"></article>       
+                  <div class="table-responsive-sm">
+                      <table class="table" id="table">
+                          <thead  id= "theadAlumna">
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Cursos Inscritos</th>
+                              <th scope="col">Progreso General</th>
+                              <th scope="col">Progreso Específico</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>JavaScript</td>
+                              <td>
+                                  <br>
+                                  <br>
+                                      <div class="progress">
+                                              <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                      </div>
+                                            
+                              </td>
+                              <td>    <!--barra de progreso lecturas-->
+                                      Lecturas
+                                      <div class="progress">
+                                              <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                      </div>
+                                      <!--barra de progreso Quiz-->
+                                      Quiz
+                                      <div class="progress">
+                                              <div class="progress-bar bg-danger" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">10%</div>
+                                      </div>
+                                      <!--barra de progreso Ejercicios-->
+                                      Ejercicios
+                                      <div class="progress">
+                                              <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                      </div>
+                              </td>
+                            </tr>
+                            <tr>
+                                  <th scope="row">2</th>
+                                  <td>CSS</td>
+                                  <td>
+                                      <br>
+                                      <br>
+                                          <div class="progress">
+                                                  <div class="progress-bar bg-succes" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                          </div>
+                                                
+                                  </td>
+                                  <td>    <!--barra de progreso lecturas-->
+                                          Lecturas
+                                          <div class="progress">
+                                                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+                                          </div>
+                                          <!--barra de progreso Quiz-->
+                                          Quiz
+                                          <div class="progress">
+                                                  <div class="progress-bar bg-succes" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                          </div>
+                                          <!--barra de progreso Ejercicios-->
+                                          Ejercicios
+                                          <div class="progress">
+                                                  <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                          </div>
+                                  </td>
+                            </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </section> <!-- fin de la sección alumnas  -->
+              <!--SECCION DATOS COHORTS-->
+              <section id="datosCohortsAll">
+                  <section class="col-sm">
+                          <section class="form-group">
+                                  <!--Dropdown con el listado de todos los cohorts-->
+                                  <label for="exampleFormControlSelect1">Listado de Cohorts</label>
+                                  <select class="form-control" id="nombreCohort">
+                                      <option id= "optionCohort">Elegir Cohort</option>
+                                  </select>
+                          </section>             
+                          <form class="form-inline justify-content-left">
+                              <input class="form-control sm-2" type="text" placeholder="Buscar" size="15" id="buscarCohort">
+                              <button class="btn btn-outline-success sm-0" type="submit" id="btnBuscarCohort">Buscar</button>
+                          </form>
+                    </section>
+              <article id="nameCohort"></article>       
+              <div class="table-responsive-sm">
+                  <table class="table" id="tableCohort">
+                      <thead id="theadCohort">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Cohort</th>
+                          <th scope="col">Progreso General</th>
+                          <th scope="col">Progreso Específico</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>JavaScript</td>
+                          <td>
+                              <br>
+                              <br>
+                                  <div class="progress">
+                                          <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                  </div>
+                                        
+                          </td>
+                          <td>    <!--barra de progreso lecturas-->
+                                  Lecturas
+                                  <div class="progress">
+                                          <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                  </div>
+                                  <!--barra de progreso Quiz-->
+                                  Quiz
+                                  <div class="progress">
+                                          <div class="progress-bar bg-danger" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">10%</div>
+                                  </div>
+                                  <!--barra de progreso Ejercicios-->
+                                  Ejercicios
+                                  <div class="progress">
+                                          <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                  </div>
+                          </td>
+                        </tr>
+              </section> <!-- fin de la sección Cohorts  -->
+          </section>  <!--FIN DE COL SM 9 -->  
+      </div> <!--FIN DE ROW -->
+    </section> <!--FIN DE GRID-->
+<script src="main.js"></script>
+<script src="data.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>
