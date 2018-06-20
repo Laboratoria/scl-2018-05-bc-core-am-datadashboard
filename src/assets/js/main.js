@@ -17,10 +17,12 @@ window.onload = () => {
 			if (elem.sede === "lima"){
 				//mostrar id de esos cohort	
 				cohortsID.push(elem.id);
+				console.log(cohortsID);
 			} 
 		});
 		//transforme a texto los ids 
 		let cohortsIdText = JSON.stringify(cohortsID);
+		//console.log(cohortsIdText);
 		
 		//mostrar id de esos cohort y listarlos con innerHTML  
 		/*document.getElementById("showCohortList").innerHTML = cohortsIdText; */
@@ -41,7 +43,14 @@ window.onload = () => {
 
 		const lima = document.getElementById('btnLima');lima.addEventListener('click', () => {
 			document.getElementById('cohorts').style.display = 'block';
-			document.getElementById('nameCohort').innerText = cohortsIdText;
+			const datos = document.getElementById('nameCohort');
+			datos.innerHTML =`<p>cohortsIdText</p>`;
+			
+			/*let newNameCohort = [];
+			for (let i = 0; i < cohortsIdText.length; i++) {
+				newNameCohort.push(cohortsIdText);
+				console.log(newNameCohort);
+			}*/
 
 		})
 		
