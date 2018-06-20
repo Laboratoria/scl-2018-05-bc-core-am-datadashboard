@@ -1,6 +1,6 @@
 //BOTÓN 1
-const studentList = document.getElementById('names'); //1. crear un botón
-const container = document.getElementById('studentListBox');  //2. crear div con id studentListBox
+const studentList = document.getElementById('names');
+const container = document.getElementById('studentListBox');
 const usersJSON = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
 
 fetch(usersJSON)
