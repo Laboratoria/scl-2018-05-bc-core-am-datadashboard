@@ -9,7 +9,11 @@
   display: flex;
   width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
 	left: 0; /* Posicionamos la cabecera al lado izquierdo */
-	top: 0; /* Posicionamos la cabecera pegada arriba */
+  top: 0; /* Posicionamos la cabecera pegada arriba */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0; 
 	overflow: hidden; /* Hacemos que la cabecera tenga una posición fija */
 }
 
@@ -27,7 +31,6 @@
   text-align: center;
   padding: 1em 2em;
   overflow: hidden; 
-
 }
 
 /* -------------Estilos Barra Menu---------------*/
@@ -37,7 +40,10 @@
   height: 100vh;
   background: white;
   border-right: 1px solid #ededed;
-
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 ul {
@@ -61,7 +67,9 @@ ul {
   overflow: hidden; 
 }
 
-
+button {
+  border:none;
+}
 /* Cambiar el color del enlace al desplazar el mouse */
 .menuLink:hover {
   background: #FF009E;
@@ -74,6 +82,11 @@ ul {
   padding: 2.250em 2.250em;
   overflow-y: auto;
   overflow-y: hidden;
+}
+
+#myInput {
+  border:none;
+  box-shadow: none;
 }
 /* -------------Estilos Barra Menu---------------*/
 
