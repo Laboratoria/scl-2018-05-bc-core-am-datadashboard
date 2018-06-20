@@ -1,6 +1,6 @@
 //BOTÓN 1
-const btn = document.querySelector('button');
-const container = document.getElementById('root');
+const studentList = document.getElementById('names');
+const container = document.getElementById('studentListBox');
 const usersJSON = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
 
 fetch(usersJSON)
@@ -14,7 +14,7 @@ fetch(usersJSON)
 
 //función
 const renderUsers = data => {
-  btn.addEventListener('click', () => {
+  studentList.addEventListener('click', () => {
     //element representa cada uno de los elementos del arreglo
     const render = data.forEach(element => {
       //para imprimir todos los nombres dentro del container (root) de html, uno tras otro
