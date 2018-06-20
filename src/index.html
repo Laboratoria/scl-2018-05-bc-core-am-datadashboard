@@ -1,11 +1,176 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <script src="main.js"></script>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<title>Data Dashboard</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<!-- Mi CSS -->
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="container container-login" id="login">
+		<div class="row justify-content-center mt-5 pt-5">
+			<div class="col-md-5">
+				<div class="img-logo">
+					<img src="logo.png">
+				</div>
+				<h1 class="display-4 text-center mt-3 mb-5">Login</h1>
+				<section>
+					<div class="row form-group">
+						<label for="usuario" class="col-form-label col-md-3">Usuario:</label>
+						<div class="col-md-9">
+							<input type="text" name="usuario" id="user-login" class="form-control" required placeholder="Ingrese Nombre...">
+						</div>
+					</div>
+					<div class="row form-group">
+						<label for="password" class="col-form-label col-md-3">Contraseña:</label>
+						<div class="col-md-9">
+							<input type="password" name="password" id="password-login" class="form-control" required placeholder="Ingrese Contraseña...">
+						</div>
+					</div>
+					<div class="col-md-12 text-center">
+						<button type="submit" class="btn btn-warning mt-3 mb-3" id="btnLogin">Ingresar</button>
+						<p  class="text-center">
+							<a href="#">¿Olvidaste tu contraseña?</a>
+						</p>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<!-- PANEL DE BUSQUEDA -->
+	<!-- Logo Banner -->
+	<div class="container divDisplayNone" id="containerSearch">
+		<section class="row justify-content-center">
+			<div class="col-sm-3 p-2">
+				<img src="logo.png" class="img-fluid">
+			</div>
+		</section>
+		<!-- Bienvenida -->
+		<section class="row background-avatar align-items-center p-3">
+			<div class="col-sm-1">
+				<img src="img-cat.jpg" class="img-fluid img-face">
+			</div>
+			<div class="col-sm-9">
+				<p class="lead mt-3">Bienvenid@ Usuario</p>
+			</div>
+		</section>
+		<!-- Buscador de alumnas por id -->
+		<div class="col-sm mt-3">
+			<p class="lead">Seleccióne criterio de busqueda</p>
+		</div>
+		<hr>
+		<section class="col-sm">
+			<form>
+				<div class="form-group row mt-3">
+					<label for="alumnasId" class="col-sm-2 col-form-label lead">Buscar alumas por ID</label>
+					<div class="col-sm-8">
+						<input type="email" class="form-control" id="alumnasId" placeholder="Buscar">
+					</div>
+					<div class="col-sm-2">
+						<button type="button" class="btn btn-warning btn-block">Buscar</button>
+					</div>
+				</div>
+			</form>
+		</section>
+		<hr>
+		<!-- Buscador de alumnas por select -->
+		<section class="row mt-2">
+			<div class="col-sm col-md-6">
+				<select class="custom-select">
+					<option selected>Sede</option>
+					<option value="1">Lima - Perú</option>
+					<option value="2">Santiago - Chile</option>
+					<option value="3">Guadalajara - Mexico</option>
+					<option value="4">Ciudad de Mexico - Mexico</option>
+					<option value="5">Sao Paulo - Brasil</option>
+				</select>
+			</div>
+			<div class="col-sm col-md-6">
+				<select class="custom-select">
+					<option selected>Jornada</option>
+					<option value="1">AM</option>
+					<option value="2">PM</option>
+				</select>
+			</div>
+		</section>
+		<section class="row mt-4">
+			<div class="col-sm col-md-6">
+				<select class="custom-select">
+					<option selected>Especialidad</option>
+					<option value="1">Front-End Developer</option>
+					<option value="2">UX Designer</option>
+				</select>
+			</div>
+			<div class="col-sm col-md-6">
+				<select class="custom-select">
+					<option selected>Cursos</option>
+					<option value="1">Curso 1</option>
+					<option value="2">Curso 2</option>
+					<option value="3">Curso 3</option>
+					<option value="4">Curso 4</option>
+					<option value="5">Curso 5</option>
+					<option value="6">Curso 6</option>
+				</select>
+			</div>
+		</section>
+		<section class="row mt-4">
+			<div class="col-sm col-md-6">
+				<select class="custom-select">
+					<option selected>Generacion</option>
+					<option value="1">2014</option>
+					<option value="2">2015</option>
+					<option value="3">2016</option>
+					<option value="4">2017</option>
+					<option value="5">2018</option>
+				</select>
+			</div>
+		</section>
+		<section class="row justify-content-center">
+			<div class="col-sm-2 mt-5">
+				<button type="button" class="btn btn-warning btn-block">Buscar</button>
+			</div>
+		</section>
+		
+	</div>
+
+	<!-- PERFIL ALUMNA -->
+	<div class="container divDisplayNone" id="containerAlumna">
+		<section class="row justify-content-center">
+			<div class="col-sm-3 p-2">
+				<img src="logo.png" class="img-fluid">
+			</div>
+		</section>
+		<!-- Bienvenida -->
+		<section class="row background-avatar align-items-center p-3">
+			<div class="col-sm-1">
+				<img src="img-cat.jpg" class="img-fluid img-face">
+			</div>
+			<div class="col-sm-9">
+				<p class="lead mt-3">Bienvenid@ Usuario</p>
+			</div>
+		</section>
+		<!-- Buscador de alumnas por id -->
+		<section class="row mt-4">
+			<div class="col-sm-6">
+				<p class="lead">Perfil Alumna</p>
+			</div>
+			<div class="col-sm-6">
+				<a href="#" class="lead float-right"><i class="fas fa-arrow-left"></i> Regresar al Panel de busqueda</a>
+			</div>
+		</section>
+		<hr>
+
+	</div>
+	<!-- Jquery, popper y js Bootstrap-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+<script src="main.js"></script>
+<script src="data.js"></script>
+</body>
 </html>

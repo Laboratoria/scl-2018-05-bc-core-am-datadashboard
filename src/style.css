@@ -1,0 +1,25 @@
+.codivntainer-login{
+	display:;
+}
+.img-logo img{
+	width: 100%;
+}
+
+.img-logo-intra img{
+	width: 200px;
+}
+.img-face{
+	border-radius: 100%;
+	width: 70px;
+}
+.background-avatar{
+	background-color: #FFC107;
+	border-radius: 5px;
+}
+.divDisplayNone{
+	display: none;
+}
+.divDisplayBlock{
+	display: block;
+}
+
