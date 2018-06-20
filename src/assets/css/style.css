@@ -1,0 +1,16 @@
+body {
+  font-family: 'Open Sans';
+}
+.bg-laboratoria {
+  background-color: #FFE521;
+}
+
+.btn {
+  background-color: #FF009E;
+  color: white;
+}
+
+.card {
+  display: inline-block;
+  
+}
