@@ -56,7 +56,29 @@
     <!-- col 9 con datos -->
     <section class="col-9">
       <button id="names">Ver Más</button>
-      <div id ="studentListBox"></div>
+      
+        <table id="studentsRanking" class="table col-lg-12">
+          <thead>
+            <tr>
+              <th scope="col-md-5">Nombre</th>
+              <th scope="col">Lecturas realizadas</th>
+              <th scope="col">Quizzes Completados</th>
+              <th scope="col">Retos Completados</th>
+              <th scope="col">Tiempo consumido</th>
+              <th scope="col">Progreso (%)</th>
+            </tr>
+          </thead>
+          <tr>
+            <td id="studentListBox"></td>
+            <td id="readings"></td>
+            <td id="quizzes"></td>
+            <td id="challenges"></td>
+            <td id="time"></td>
+            <td id="progress"></td>
+
+
+          </tr>
+        </table>
       <!-- fin de col9 -->
     </section>
 
