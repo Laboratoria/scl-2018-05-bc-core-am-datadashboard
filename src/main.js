@@ -1,6 +1,6 @@
 const container = document.getElementById("root")
 const userJson = "http://127.0.0.1:8887/data/cohorts/lim-2018-03-pre-core-pw/users.json"
-const progressJson = "http://127.0.0.1:8887/data/cohorts/lim-2018-03-pre-core-pw/users.json"
+const progressJson = "http://127.0.0.1:8887/data/cohorts/lim-2018-03-pre-core-pw/progress.json"
 const cohortJson = "http://127.0.0.1:8887/data/cohorts.json"
 const cohortBtn = document.getElementById("cohortBtn");
 
