@@ -17,13 +17,13 @@ window.onload = () => {
 		if (elem.sede === "lima"){
 	//mostrar id de esos cohort	
 		cohortsID.push(elem.id);
-		console.log(cohortsID) } 
+	 	} 
 	});
 	//transforme a texto los ids 
 	let cohortsIdText = JSON.stringify(cohortsID);
 	
 	//mostrar id de esos cohort y listarlos con innerHTML  
-	document.getElementById("showCohorts").innerHTML = cohortsIdText;
+	/*document.getElementById("showCohortList").innerHTML = cohortsIdText; */
 	}
 
 }
