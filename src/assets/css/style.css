@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans';
 }
-#navBar {
+.bg-laboratoria {
   background-color: #FFE521;
 }
 
@@ -9,28 +9,12 @@ body {
   padding: 0%;
 }
 
-#upBar {
-  background-color: #56F89A;
-  display: flex;
-}
-
-#nameUser {
-  font-size: 25px;
-}
-
-#imgPersonal {
-  border-radius: 100%;
-  width: 80%;
-  border: 10%;
-}
-
-.breadcrumb {
-  background-color: #56F89A;
-  color: black;
-
-}
-
-.btn-primary {
+.btn-secondary {
   background-color: #FF009E;
-  color: black;
+  color: white;
+}
+
+.container-fluid {
+  background: #FF009E;
+
 }
