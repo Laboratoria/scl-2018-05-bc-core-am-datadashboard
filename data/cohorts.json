@@ -226,6 +226,7 @@
   "usersCount": 16
 }, {
   "id": "lim-2016-01-bc-core-egresadas20161bootcamp",
+  "sede":"lima",
   "usersCount": 64,
   "start": "2016-01-01",
   "coursesIndex": {
@@ -243,8 +244,10 @@
     }
   },
   "end": "2016-06-30"
-}, {
+},
+{
   "id": "lim-2016-07-bc-core-egresadas20162bootcamp",
+  "sede":"lima",
   "usersCount": 32,
   "start": "2016-07-01",
   "coursesIndex": {
@@ -262,8 +265,10 @@
     }
   },
   "end": "2016-12-31"
-}, {
+},
+{
   "id": "lim-2017-01-bc-core-egresadas20171bootcamp",
+  "sede":"lima",
   "usersCount": 47,
   "start": "2017-01-01",
   "coursesIndex": {
@@ -281,8 +286,10 @@
     }
   },
   "end": "2017-06-30"
-}, {
+},
+{
   "id": "lim-2017-09-bc-core-am",
+  "sede":"lima",
   "start": "2017-09-25",
   "coursesIndex": {
     "social-network": {
@@ -302,8 +309,10 @@
     }
   },
   "usersCount": 81
-}, {
+},
+{
   "id": "lim-2017-09-bc-core-pm",
+  "sede":"lima",
   "start": "2017-09-25",
   "coursesIndex": {
     "social-network": {
@@ -323,8 +332,10 @@
     }
   },
   "usersCount": 83
-}, {
+},
+{
   "id": "lim-2017-09-ec-js-functional",
+  "sede":"lima",
   "usersCount": 23,
   "start": "2017-09-07",
   "coursesIndex": {
@@ -333,8 +344,10 @@
     }
   },
   "end": "2017-09-30"
-}, {
+},
+{
   "id": "lim-2017-10-ec-js-paradigms",
+  "sede":"lima",
   "usersCount": 23,
   "start": "2017-10-17",
   "coursesIndex": {
@@ -342,8 +355,10 @@
       "title": "Paradigmas de programación"
     }
   }
-}, {
+},
+{
   "id": "lim-2017-10-ec-js-react",
+  "sede":"lima",
   "usersCount": 19,
   "start": "2017-10-19",
   "coursesIndex": {
@@ -351,8 +366,10 @@
       "title": "React"
     }
   }
-}, {
+},
+{
   "id": "lim-2017-11-ec-js-angular-fundamentals",
+  "sede":"lima",
   "usersCount": 14,
   "start": "2017-11-30",
   "coursesIndex": {
@@ -361,8 +378,10 @@
     }
   },
   "end": "2017-12-19"
-}, {
+},
+{
   "id": "lim-2018-01-bc-js-front-end-developer",
+  "sede":"lima",
   "usersCount": 60,
   "start": "2018-01-24",
   "coursesIndex": {
@@ -380,8 +399,10 @@
     }
   },
   "end": "2018-03-21"
-}, {
+},
+{
   "id": "lim-2018-01-bc-ux-ux-designer",
+  "sede":"lima",
   "start": "2018-01-24",
   "coursesIndex": {
     "aplica-lo-aprendido": {
@@ -396,8 +417,10 @@
   },
   "end": "2018-03-21",
   "usersCount": 46
-}, {
+},
+{
   "id": "lim-2018-01-ec-js-chatbot",
+  "sede":"lima",
   "usersCount": 26,
   "start": "2018-01-25",
   "coursesIndex": {
@@ -406,8 +429,10 @@
     }
   },
   "end": "2018-02-15"
-}, {
+},
+{
   "id": "lim-2018-01-ec-js-funcionaljs",
+  "sede":"lima",
   "usersCount": 12,
   "start": "2018-01-24",
   "coursesIndex": {
@@ -416,14 +441,18 @@
     }
   },
   "end": "2018-03-07"
-}, {
+},
+{
   "id": "lim-2018-03-jp-core-talento",
+  "sede":"lima",
   "start": "2018-03-15",
   "coursesIndex": {},
   "end": "2018-04-15",
   "usersCount": 121
-}, {
+},
+{
   "id": "lim-2018-03-pre-core-pw",
+  "sede":"lima",
   "usersCount": 740,
   "publicAdmission": true,
   "start": "2018-03-13",
@@ -433,8 +462,10 @@
     }
   },
   "end": "2018-03-31"
-}, {
+},
+{
   "id": "lim-2018-04-l4b-business-gmd",
+  "sede":"lima",
   "usersCount": 1,
   "publicAdmission": false,
   "start": "2018-04-18",
@@ -444,8 +475,10 @@
     }
   },
   "end": "2018-04-20"
-}, {
+},
+{
   "id": "lim-2018-05-l4b-business-banbif",
+  "sede":"lima",
   "publicAdmission": false,
   "start": "2018-05-08",
   "end": "2018-06-08"
