@@ -1,0 +1,323 @@
+#datosCohortsAll{
+    display: none;
+}
+#datosAlumnas{
+    display: none;
+}
+#logo{
+    text-align: center;
+}
+
+#pic{
+    text-align: center;
+    font-size: 1em ; 
+}
+
+/* estilos para el contenedor de la sección principal */
+#container { 
+    margin: 0 auto;
+    display: flex;
+    
+}
+#barra-sedes {
+  height: 100px;
+  background-color: #FFE521;
+    
+}
+#sedes {
+  border-radius: 8px;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-top: 25px;
+  width: 220px;
+}
+#cohort {
+  border-radius: 8px;
+  font-size: 20px;
+  width: 150px;
+}
+#headboard{
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* estilos para los datos dinámicos de la primera hilera de tarjeta */
+.numTotal { 
+  font-size: 2.25em;
+  margin: 0;
+  font-weight: bolder;
+}
+.percent {
+  font-size: 3em;
+  margin: 0;
+  font-weight: bolder;
+  margin-top: 1%;
+    
+}
+/* estilos para los contenedores de datos dinámicos de la primera hilera de la tarjeta */
+.totalStudents, 
+.totalPercent {
+  display: block;
+}
+/* estilos para la tarjeta que muestra el total de alumnas por cohort */
+.alumnas-2 { 
+  background-color: rgb(245, 20, 76);
+  border-radius: 15px;
+  height:23.75em;
+  width: 23%;
+  margin-top: 8%;
+  text-align: center;
+    
+}
+/* estilos para la tarjeta que muestra el total de alumnas que alcanzaron el promedio general */
+.prom-general { 
+     background-color: rgb(76, 104, 231);
+     border-radius: 15px;
+     height: 23.75em;
+     width: 23%;
+     margin-top: 8%;
+     text-align: center;
+ }
+ /* estilos para la tarjeta que muestra el total de alumnas que alcanzaron los completados cursos */
+ .logros-cursos { 
+    background-color: rgb(247, 106, 11);
+    border-radius: 15px;
+    height: 23.75em;
+    width: 23%;
+    margin-top: 8%;
+    text-align: center;
+ }
+ /* estilos para la tarjeta que muestra el total de alumnas que alcanzaron todos los task */
+ .comple-task{ 
+    background-color: rgb(3, 158, 36);
+    border-radius: 15px;
+    height: 23.75em;
+    width: 23%;
+    margin-top: 8%;
+    text-align: center;
+ }
+ 
+.navbar{
+    background-color: #FFE521; 
+    width: 100%; 
+    height: 100%;
+}
+.btn-secondary{
+    color: #333333; 
+    font-size: 1m ;
+    font-weight:bold;
+    font-family:Arial; 
+    background-color: #FFE521; 
+    border:#FFE521 
+}
+.form-group{
+    padding: 1.5em;
+}
+.form-inline{
+    padding: 0.5em;
+}
+.wrapper {
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}  
+#sidebar {
+    background-color: #FFE521;
+}
+#optionAlumna{
+    color:#333333;
+   
+}
+
+#theadAlumna{
+ background-color:#FF009E; 
+ color:white; 
+}
+
+#theadCohort{
+ background-color: #56F89A; 
+ color:white;
+}
+.col-sm-9{
+    padding: 0;
+}
+.col-sm-3{
+    padding: 0;
+
+/* Aqui los estilos del login */
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url(http://ce.entel.cl/wp-content/uploads/2018/04/galeria-laboratoria_02.png);
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	z-index: 0;
+}
+
+.grad{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.header{
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 255px);
+	z-index: 2;
+}
+
+.header div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #ffe521 !important;
+}
+
+.login{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+}
+
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]{
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+/* Aqui van los estilos de los cursos*/
+
+.p-2 {
+	background-color: #ffe521;
+	width: 490px;
+	height: 200px;
+	padding: 6px;
+	margin-top: 10px;
+	align-content: center;
+	
+	
+	
+}
+.p-3 {
+	background-color: #13dd1d;
+	width: 390px;
+	height: 200px;
+	
+}
+.p-4 {
+	background-color: #f71e1e;
+	width: 390px;
+	height: 200px;
+}
+.p-5 {
+	background-color: #e76f0e;
+	width: 390px;
+	height: 200px;
+}
+.p-6 {
+	background-color: #1d0ee7;
+	width: 390px;
+	height: 200px;
+}
