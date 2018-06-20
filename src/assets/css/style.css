@@ -1,15 +1,3 @@
-#barraLateral {
-  background-color: #FFE521;
-
-
-}
-.col-10 {
-  padding: 0%;
-}
-
-#barraSuperior {
-  background-color: #FFE521;
-}
 body {
   font-family: 'Open Sans';
 }
@@ -17,16 +5,12 @@ body {
   background-color: #FFE521;
 }
 
-.col-10 {
-  padding: 0%;
-}
-
-.btn-secondary {
+.btn {
   background-color: #FF009E;
   color: white;
 }
 
-.container-fluid {
-  background: #FF009E;
-
+.card {
+  display: inline-block;
+  
 }
