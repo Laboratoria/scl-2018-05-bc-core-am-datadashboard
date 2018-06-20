@@ -10,12 +10,7 @@ body {
   color: white;
 }
 
-.container-fluid {
-  background: #56F89A;
-}
-
 .card {
   display: inline-block;
-  justify-content: space-between;
   
 }
