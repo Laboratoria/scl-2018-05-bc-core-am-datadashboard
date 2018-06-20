@@ -25,7 +25,7 @@
     background-color:#F2F2F2;
     border: 1px solid #BDBDBD;
     margin: 0%;
-    height: 36em;
+    height: 100vh;
 }
 /*foto valentina*/
 .photo1{
@@ -48,7 +48,7 @@
 /*Súper Menú*/
 .menu {
     width: 100%;
-    margin-top: 60%; 
+    margin-top: 5%; 
 }
 
 .menu a {
@@ -120,7 +120,7 @@ li{
     margin: 0px;
     padding: 0%;
     top: 0%;
-    height: 36em;
+    height: 100vh;
 }
 
 /*RESPONSIVE*/

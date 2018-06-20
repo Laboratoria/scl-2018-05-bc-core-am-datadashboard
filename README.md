@@ -36,6 +36,10 @@ https://www.figma.com/file/Dw56JrHHlgMwkEAPgMsqWBhn/Primera-parte
 
 https://www.figma.com/file/gMsk9TUdj5ta3XFapR28Chik/Untitled?node-id=1%3A2
 
+### ENTREVISTA A USUARIO Y ELECCIONES DE DISEÑO (UX)
+
+![](https://imageshack.com/a/img923/3187/GQlJhG.jpg)
+
 
 
           
