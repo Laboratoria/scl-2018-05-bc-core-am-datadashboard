@@ -3,56 +3,59 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="grid.css">
-    <link rel="shortcut icon" type="image/png" href="../src/assests/img/tru9y_wg_400x400.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
+    <title>Gráficos</title>
+    <!-- Fonts -->   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
+    <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    
+    <!-- Logo chiquitito -->
+    <link rel="shortcut icon" type="image/png" href="../src/assests/img/tru9y_wg_400x400.png"/>
+    <!-- Grilla -->    
+    <link rel="stylesheet" href="grid.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- estilos pagina -->
+    <link rel="stylesheet" href="data.css">
   </head>
   <body>
-
-
-    
-     <!-- primer row -->
-     <section class="row">
-        <!-- inicio columna 3 -->
-       <section class="col-3 menuGrey">
+<!-- Primer Row -->
+    <section class="row">
+        <section class="col-3">
           <section class="logo"> <!-- Para Logo -->
             <img src="../src/assests/img/logo_laboratoria-07_(2).png" alt="Logo Laboratoria">
-          </section> <!-- Fin Logo -->
-
+         </section><!-- fin de sección logo -->
+        </section>
+        <!-- para títulos -->
+        <header class="col-9 yellowC">
+          <h1>GRÁFICOS</h1>
+        </header>
+        <!-- Fin de primer row -->
+      </section> 
+        <!-- Segundo Row  -->
+      <section class="row">
+          <!-- inicio columna 3 -->
+        <section class="col-3 menuGrey">
           <section class="profile"><!-- Para nombre de perfil con foto --> 
-            <img class="photo1" src="../src/assests/img/picture.png" alt="foto de valentina">
+            <img class="photo1" src="assests/img/vale_foto.jfif" alt="foto de valentina">
             <h3>Valentina Smith</h3>
             <h5>valentina@mail.com</h5>            
-          </section><!-- fin de nombre perfil con foto -->
-
+        </section><!-- fin de nombre perfil con foto -->
           <!-- espacio para menú -->
-          <section class="menu">
-            <ul>
-             <li><i class="icon fas fa-home"></i><a href="#" >INICIO</a></li>
-             <li><i class="icon fas fa-tachometer-alt"></i><a href="#"class=" current dashboard">DASHBOARD</a></li>
-             <li><i class="icon fas fa-book-open"></i><a href="#">CURSOS</a></li>
-             <li><i class="icon fas fa-cog"></i><a href="#">CONFIGURACIÓN</a></li>                            
-            </ul>
-            <!-- cierre menú -->
-          </section>
-            <!-- Sección Cerrar Sesión-->
-           <section class="endS"> 
-              <li><i class="icon fas fa-sign-out-alt"></i><a href="#">Cerrar Sesión</a></li>
-              <!-- fin de sección Cerrar Sesión-->
-          </section>
-
-         <!-- fin de columna 3 -->
-        </section>
-
-            <!-- comienzo columna 9 de título -->
-        <section class="col-9 yellowC">
-            <h1>GRÁFICOS COHORT-1</h1>
-              <!-- final de columna 9 de título -->
-          </section>
+        <nav class="menu">
+          <ul>
+            <li><a href="#"><i class="icon fas fa-home"></i>INICIO</a></li>
+            <li><a href="#"class="current"><i class="icon fas fa-tachometer-alt"></i>DASHBOARD</a></li>
+            <li><a href="#"><i class="icon fas fa-book-open"></i>CURSOS</a></li>
+            <li><a href="#"><i class="icon fas fa-cog"></i>CONFIGURACIÓN</a></li>                       
+          </ul>
+              <!-- cierre menú -->
+        </nav>
+                 <!-- Sección Cerrar Sesión-->
+        <footer class="endS"> 
+            <li><a href="#"><i class="icon fas fa-sign-out-alt"></i>Cerrar Sesión</a></li>
+          </footer>         
+            <!-- fin de sección Cerrar Sesión-->
+        </section>   
           <!-- comienzo col9 de gráficos -->
         <section class="col-9 ">
           <!-- primer gráfico -->
@@ -67,20 +70,13 @@
           </section>
           <!-- fin de col 9 de gráficos -->
           </section>
-       
-      
-
-      
-       <!-- fin de primer row -->
+         <!-- fin de degundo row -->
      </section>
     
-     <!-- comienzo de segundo row -->
-      <section class="row">
+  
        
     
     
-       <!-- final de segundo row -->
-     </section>
   
     <script src="main.js"></script>
   </body>
