@@ -18,17 +18,20 @@ fetch(usersJSON)
   renderUsers(data);
 })
 
+
+
 //función
 const renderUsers = data => {
   studentList.addEventListener('click', () => {
     //element representa cada uno de los elementos del arreglo
     const render = data.forEach(element => {
       //para imprimir todos los nombres dentro del container (root) de html, uno tras otro
-      //para imprimir todos los nombres dentro del container (root) de html, uno tras otro
-     if (element.role === 'student') {  //para que solo imprima las estudiantes
-      container.innerHTML += `<p>${element.name}</p>`;
-      container2.innerHTML += `<p>${element.role}</p>`;
-     };
+     container.innerHTML += `<p>${element.name}</p>`;
+     container2.innerHTML += `<p>${element.signupCohort}</p>`;
+     container3.innerHTML += `<p>${element.role}</p>`;
+     container4.innerHTML += `<p>${element.role}</p>`;
+     container5.innerHTML += `<p>${element.role}</p>`;
+     container6.innerHTML += `<p>${element.role}</p>`;
 
 
     
