@@ -116,14 +116,3 @@ window.processCohortData = () => {
 
 };
 
-/////CREAR FUNCIÓN PARA LOGIN (CON CONDICIONAL + ALERT() )
-
-let go = () => {
-  if (document.form.password.value ==='123' && document.form.login.value ==='Valentina'){ 
-          window.open('index.html') 
-
-      } 
-      else{ 
-           alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-      } 
-  } 
