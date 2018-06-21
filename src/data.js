@@ -12,46 +12,45 @@ window.data = {//variable declarada como un objeto con 1 prop. contex q es un ob
   }
 };
 
-let users = null;
-let progress = null;
-let cohorts = null;
+window.loadData = () => {
+  fetch(cohortJson)
+    .then(response => response.json())
+    .then(data => {
+      window.data.context.cohorts = data;
+      stopLoading();
+    });
+
+  fetch(userJson)
+    .then(response => response.json())
+    .then(data => {
+      window.data.context.users = data;
+      stopLoading();
+    });
+
+  fetch(progressJson)
+    .then(response => response.json())
+    .then(data => {
+      window.data.context.progress = data;
+      stopLoading();
+    });
 
 
-fetch(cohortJson)
-  .then(response => response.json())
-  .then(data => {
-    cohorts = data;
-    stopLoading();
-  });
+  const stopLoading = () => { //función que sincroniza el término de cada promesa...
+    if (users && progress && cohorts) {//Cuando ya no tienen valor null
+      // Termine de cargar
 
-fetch(userJson)
-  .then(response => response.json())
-  .then(data => {
-    users = data;
-    stopLoading();
-  });
-
-fetch(progressJson)
-  .then(response => response.json())
-  .then(data => {
-    progress = data;
-    stopLoading();
-  });
+      renderUsers();
+    }
+  };
+}
 
 
-const stopLoading = () => { //función que sincroniza el término de cada promesa...
-  if (users && progress && cohorts) {//Cuando ya no tienen valor null
-    // Termine de cargar
-
-    renderUsers();
-  }
-};
 
 
 const renderUsers = () => {
-  cohortBtn.addEventListener("click", () =>{
+  cohortBtn.addEventListener("click", () => {
     const render = users.forEach(element => {
-      return contentDiv.innerHTML += `<p>${element.name}</p>`  
+      return contentDiv.innerHTML += `<p>${element.name}</p>`
     })
     return render;
   })
@@ -89,7 +88,7 @@ window.filterUsers = (users, search) => {
 };
 
 window.processCohortData = (options) => {
-  
+
 };
 
 /* it('debería exponer función filterUsers en objeto global', () => {
