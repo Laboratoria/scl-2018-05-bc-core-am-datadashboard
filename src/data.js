@@ -7,7 +7,7 @@ const container4 = document.getElementById('challenges');
 const container5 = document.getElementById('time');
 const container6 = document.getElementById('progress');
 const usersJSON = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
-
+const progressJSON = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json'
 
 fetch(usersJSON)
 //esto nunca cambia
@@ -18,6 +18,16 @@ fetch(usersJSON)
   renderUsers(data);
 })
 
+fetch(progressJSON)
+.then(response => response.json())
+.then(progressJSON => {
+  progress = progressJSON;
+  console.log(progress);
+})
+
+
+
+
 //función
 const renderUsers = data => {
   studentList.addEventListener('click', () => {
@@ -25,7 +35,7 @@ const renderUsers = data => {
     const render = data.forEach(element => {
       //para imprimir todos los nombres dentro del container (root) de html, uno tras otro
      container.innerHTML += `<p>${element.name}</p>`;
-     container2.innerHTML += `<p>${element.role}</p>`;
+     container2.innerHTML += `<p>${element.signupCohort}</p>`;
      container3.innerHTML += `<p>${element.role}</p>`;
      container4.innerHTML += `<p>${element.role}</p>`;
      container5.innerHTML += `<p>${element.role}</p>`;
@@ -96,14 +106,3 @@ window.processCohortData = () => {
 
 };
 
-/////CREAR FUNCIÓN PARA LOGIN (CON CONDICIONAL + ALERT() )
-
-let go = () => {
-  if (document.form.password.value ==='123' && document.form.login.value ==='Valentina'){ 
-          window.open('index.html') 
-
-      } 
-      else{ 
-           alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-      } 
-  } 
