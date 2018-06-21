@@ -9,39 +9,45 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Logo chiquitito -->
-    <link rel="shortcut icon" type="image/png" href="../src/assests/img/Lverde.png"/>
+    <link rel="shortcut icon" type="image/png" href="../src/assests/img/tru9y_wg_400x400.png"/>
     <!-- Grilla -->    
     <link rel="stylesheet" href="grid.css">
     <!-- Estilos -->
     <link rel="stylesheet" href="style.css" />
+    <!-- estilos pagina -->
+    <link rel="stylesheet" href="data.css">
+  </head>
   </head>
   <body>
-    <!-- Primer Row -->
+
+    
+     <!-- Primer Row -->
     <section class="row">
       <section class="col-3">
         <section class="logo"> <!-- Para Logo -->
           <img src="../src/assests/img/logo_laboratoria-07_(2).png" alt="Logo Laboratoria">
        </section>
       </section>
+      <!-- para Títulos -->
       <header class="col-9 yellowC">
-        <h1>BIENVENIDA</h1>
+        <h1>DATA DASHBOARD</h1>
       </header>
       <!-- fin de primer row -->
     </section> 
-    <!-- Segundo Row  -->
+      <!-- Segundo Row  -->
     <section class="row">
         <!-- inicio columna 3 -->
       <section class="col-3 menuGrey">
+        <section class="profile"><!-- Para nombre de perfil con foto --> 
           <img class="photo1" src="assests/img/vale_foto.jfif" alt="foto de valentina">
-          <section class="profile"><!-- Para nombre de perfil con foto --> 
           <h3>Valentina Smith</h3>
           <h5>valentina@mail.com</h5>            
       </section><!-- fin de nombre perfil con foto -->
         <!-- espacio para menú -->
-      <nav class="menu" id="topNav">
+      <nav class="menu">
         <ul>
-          <li><a href="index.html" class="current"><i class="icon fas fa-home"></i>INICIO</a></li>
-          <li><a href="datadashboard.html"class="dashboard"><i class="icon fas fa-tachometer-alt"></i>DASHBOARD</a></li>
+          <li><a href="index.html"><i class="icon fas fa-home"></i>INICIO</a></li>
+          <li><a href="datadashboard.html"class="current"><i class="icon fas fa-tachometer-alt"></i>DASHBOARD</a></li>
           <li><a href="#"><i class="icon fas fa-book-open"></i>CURSOS</a></li>
           <li><a href="#"><i class="icon fas fa-cog"></i>CONFIGURACIÓN</a></li>                       
         </ul>
@@ -53,21 +59,25 @@
       </footer>         
         <!-- fin de sección Cerrar Sesión-->
     </section>
-    <!--  -->
-    <section class="col-9 labPhoto">
-      <img src="../src/assests/img/Laboratoria2.png" alt="Laboratoria">
-      <!-- fin de col9 con foto -->
+<!-- comienzo col9 con 3 cuadros -->
+    <section class="col-9 ">
+     <!-- primer cuadro -->
+     <section id="select-cohort">
+      <h2>SELECCIONAR COHORT</h2>
+      <ul>
+         <li><a href="selected-cohort.html">Lim-2018-03-pre-core-pw</a></li> 
+         <li>Cdmx-2016-07-bc-core-egresadas20162bootcamp</li>
+         <li>Cdmx-2017-01-bc-core-egresadas20171bootcamp</li>
+         <li>Cdmx-2017-10-bc-core-am</li>
+      </ul>
+      <!-- final de columna 9 de seleccionar cohort -->
     </section>
-
-     <!-- fin de segundo row -->
-   </section>
-  
-
+  </section>
+       <!-- fin de segundo row -->
+     </section>      
+    
  
-
-
-
-
-  <script src="menu.js"></script>
-</body>
+  
+    <script src="main.js"></script>
+  </body>
 </html>
