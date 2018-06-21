@@ -43,18 +43,8 @@ const renderUsers = data => {
 
 
 
-
-
-
 //PARA CREAR FUNCIÓN GLOBAL
 window.computeUsersStats = (users, progress, courses) => {
-
-  for (let i = 0; i < users.length; i++) {
-
-  console.log(users.name);
-
-  }
-  return users.name;//nuevo arreglo
 
 
 
