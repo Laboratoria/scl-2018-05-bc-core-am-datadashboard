@@ -57,6 +57,21 @@ const renderUsers = () => {
   })
 };
 
+window.getCohortUsers = (users, cohort) => {//seleccion de usuarios por cohort
+  var result = []; //Arr con el key que conecta user con cohort
+
+  if (cohort && cohort.id && users) {//validación
+    for (var i = 0; i < users.length; i++) {
+      var user = users[i];
+
+      if (user.signupCohort == cohort.id) {
+        result.push(user);//como el usuario pertenece al cohort lo agrego al []
+      }
+    }
+  }
+  return result;
+};
+
 
 
 window.computeUsersStats = (users, progress, courses) => {
