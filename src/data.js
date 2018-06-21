@@ -12,7 +12,6 @@ window.data = {//variable declarada como un objeto con 1 prop. contex q es un ob
   }
 };
 
-window.loadData = () => {
   fetch(cohortJson)
     .then(response => response.json())
     .then(data => {
@@ -34,22 +33,17 @@ window.loadData = () => {
       stopLoading();
     });
 
-
   const stopLoading = () => { //función que sincroniza el término de cada promesa...
-    if (users && progress && cohorts) {//Cuando ya no tienen valor null
+    if (window.data.context.users && window.data.context.users && window.data.context.users) {//Cuando ya no tienen valor null
       // Termine de cargar
 
-      renderUsers();
+      loadCompleteUsers();
     }
   };
-}
 
-
-
-
-const renderUsers = () => {
+const loadCompleteUsers = () => {
   cohortBtn.addEventListener("click", () => {
-    const render = users.forEach(element => {
+    const render = window.data.context.users.forEach(element => {
       return contentDiv.innerHTML += `<p>${element.name}</p>`
     })
     return render;
@@ -91,6 +85,3 @@ window.processCohortData = (options) => {
 
 };
 
-/* it('debería exponer función filterUsers en objeto global', () => {
-    assert.isFunction(filterUsers);
-  }); */
