@@ -1,22 +1,23 @@
 /*Logo*/
 .logo{
     background-color: #ffffff;
-    padding: 10%;
     margin: 0%; 
     background-position: center;
-    border-left: 1px solid #BDBDBD;
-    border-top: 1px solid #BDBDBD;
+    width: 40%;
+    background-position: center;
+    margin-left: 25%;
+    padding-top:6%;
+  
 }
 /*Columna amarilla*/
 .yellowC {
-    background-color: #FFE521;
+    background-color: #56F89A;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    text-align: initial;
     padding-top: 4%;
     padding-left: 2%;
-    height: 8em;
+    height: auto;
     border-left: 1px solid #BDBDBD;
     border-bottom: 1px solid #BDBDBD;
 }
