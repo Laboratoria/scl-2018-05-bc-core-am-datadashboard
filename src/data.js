@@ -63,6 +63,19 @@ window.getCohortUsers = (users, cohort) => {//seleccion de usuarios por cohort
   return result;
 };
 
+window.getCohortCourseKeys = (cohort) => {//funcion q saca todas las llaves en forma de un arreglo
+  var result = [];
+
+  if (cohort && cohort.coursesIndex) {//validacion del objeto y su propiedad
+    for (var key in cohort.coursesIndex) {
+      if (Object.prototype.hasOwnProperty.call(cohort.coursesIndex, key)) {//call(objeto<---llave)
+        result.push(key);//guardo la llave en el arreglo
+      }
+    }
+  }
+  return result;
+};
+
 
 
 window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los cursos se obtienen de la prop coursesIndex
