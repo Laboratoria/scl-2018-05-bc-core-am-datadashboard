@@ -1,28 +1,13 @@
 const container = document.getElementById("root")
+const cohortBtn = document.getElementById("cohortBtn");
 
-idUser = (option) => {
-
-    let id = Object.keys(options.cohort.coursesIndex);
-    let userNewArray = computeUsersStats(options.cohortData.users, options.cohortData.progress, coursesCohortSelect);
-    return userNewArray;
-  };  
-
-
-
-/* courses = Object.keys(data.cohorts.coursesIndex);
-for (let i in courses) {
-   let coursesIndex = courses[i]; }*/
-
-const loadCompleteUsers = () => {
-  cohortBtn.addEventListener("click", () =>{
-    const render = users.forEach(element => {
-      return contentDiv.innerHTML += `<p>${element.name}</p>`
-    })
-    return render;
-  }) 
-
-};
-
+//creé las variables que utilizaremos como los objetos, aun no tienen valor puesto que aún no se cumple 
+//la promesa que nos devolverá el JSON como datos
+window.loadData(data => {//data devuelve el "contexto" de datos que cargué loadComplete; cohort, users, datos
+  
+  loading.style.display = 'none';
+  
+});
 
 
 
