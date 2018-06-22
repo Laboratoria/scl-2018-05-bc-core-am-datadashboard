@@ -8,6 +8,7 @@ window.data = {//variable declarada como un objeto con 2 prop. loadin y contex q
     cohorts: null,
     users: null,
     progresses: null,
+    cohortDatas: null //arr de la f(computeUsersStats), tendré el listado de usuarios
   }
 };
 
@@ -79,11 +80,11 @@ window.getCohortCourseKeys = (cohort) => {//funcion q saca todas las llaves en f
 
 
 window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los cursos se obtienen de la prop coursesIndex
-  var result = [];
+  var result = [];//listado de los usuarios
 
   if (users && progresses && courses) {//Validación
     for (var i = 0; i < users.length; i++) {
-      var user = users[i];//cada usuario
+      var user = users[i];
       var progress = progresses[user.id];//por cada usuario saco su progreso, indexo en [] el id del usuario en la var progreso.
 
       user.stats = {//creo la prop. stats en usuarios  
