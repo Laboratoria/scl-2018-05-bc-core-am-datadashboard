@@ -41,16 +41,19 @@ window.loadData = (loadComplete) => {//metodo loadData q recibe una función y e
     });
 
   var completePromise = (loadComplete) => {
-      (window.data.context.users,
+    window.data.context.cohortDatas = window.calculateCohortDatas(//
+      window.data.context.users,
       window.data.context.progresses,
       window.data.context.cohorts
     );
     loadComplete(window.data.context);
   };
-};
+};//hacer un enganche antes de llamar a la promesa
 
-window.getCohortUsers = (users, cohort) => {//seleccion de usuarios por cohort
-  var result = []; //Arr con el key que conecta user con cohort
+
+//Obtener todos los usuarios que tienen un cohort
+window.getCohortUsers = (users, cohort) => {
+  var result = [];
 
   if (cohort && cohort.id && users) {//validación
     for (var i = 0; i < users.length; i++) {
@@ -77,7 +80,7 @@ window.getCohortCourseKeys = (cohort) => {//funcion q saca todas las llaves en f
   return result;
 };
 
-
+//Le pasaré el arr q acabo de obtener...
 
 window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los cursos se obtienen de la prop coursesIndex
   var result = [];//listado de los usuarios
@@ -93,8 +96,30 @@ window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los 
         reads: { total: 0, completed: 0, percent: 0 },
         quizzes: { total: 0, completed: 0, percent: 0, scoreSum: 0, scoreAvg: 0 },
       };
+      if (progress) {//validación, si no está dará los valores por defecto q le di
+        for (var j = 0; j < courses.length; j++) {//recorro los cursos que me dieron por parámetro
+          var key = courses[j];
+          var course = progress[key];//busco en el progreso q estoy tal curso...
+          if (course) {
+            //Conjunto de variables que me sirven para calcular todo lo que me hará falta para stats
+            var totalParts = 0;//partes q existen en total en todo el progreso de tal usuario
+            var completedParts = 0;//partes q se han completado para este usuario
+            var totalReads = 0;//lecturas q ha tenido
+            var completedReads = 0;//lecturas terminadas
+            var totalExercises = 0;//ejercicios q tiene
+            var completedExercises = 0;//ejercicios q ha terminado
+            var totalQuizzes = 0;//retos q tiene
+            var completedQuizzes = 0;//retos completados
+            var scoreQuizzes = 0;//suma de todas las puntuaciones
+
+            for (var unitKey in course.units) {//itero en las llaves de las unidades
+              if (Object.prototype.hasOwnProperty.call(course.units, unitKey)) {//valido si la llave pertenece al objeto
+                var unit = course.units[unitKey];
+          }
+        }
+      };
     };
-  };  
+  };
 };
 
 window.sortUsers = (users, orderBy, orderDirection) => {
