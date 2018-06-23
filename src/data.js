@@ -115,11 +115,41 @@ window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los 
             for (var unitKey in course.units) {//itero en las llaves de las unidades
               if (Object.prototype.hasOwnProperty.call(course.units, unitKey)) {//valido si la llave pertenece al objeto
                 var unit = course.units[unitKey];
+
+                totalParts += unit.totalParts;//Todas las partes q existen en total de tal usuario
+                completedParts += unit.completedParts;//Tendré todas las unidades completadas de todos los cursos
+
+                for (var partKey in unit.parts) {//itero en las key de las partes
+                  if (Object.prototype.hasOwnProperty.call(unit.parts, partKey)) {
+                    var part = unit.parts[partKey];//guardo el objeto parts q estoy iterando
+
+                    switch (part.type) {//Parte tiene 3 tipos, read, exercise y quiz. 
+                      case "read": {
+                        totalReads++;//si hay un read le sumo 1
+                        completedReads += part.completed ? part.completed : 0;//validacion, si part tiene la completed, incremento la parte completada. Si no, 0, no suma.
+                      }
+                        break;
+                      case "practice": {//ejercicio, el mismo proceso anterios
+                        totalExercises++;
+                        completedExercises += part.completed ? part.completed : 0;
+                      }
+                        break;
+                      case "quiz": {
+                        totalQuizzes++;
+                        completedQuizzes += part.completed ? part.completed : 0;
+                        scoreQuizzes += part.score ? part.score : 0;
+                      }
+                        break;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
-      };
-    };
-  };
+      }
+    }
+  }
 };
 
 window.sortUsers = (users, orderBy, orderDirection) => {
