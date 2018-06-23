@@ -83,14 +83,14 @@ window.getCohortCourseKeys = (cohort) => {//funcion q saca todas las llaves en f
 //Le pasaré el arr q acabo de obtener...
 
 window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los cursos se obtienen de la prop coursesIndex
-  var result = [];//listado de los usuarios
+  var result = [];
 
   if (users && progresses && courses) {//Validación
     for (var i = 0; i < users.length; i++) {
-      var user = users[i];
-      var progress = progresses[user.id];//por cada usuario saco su progreso, indexo en [] el id del usuario en la var progreso.
+      var user = users[i];//cada usuario
+    var progress = progresses[user.id];//por cada usuario saco su progreso, indexo en [] el id del usuario en la var progreso.
 
-      user.stats = {//creo la prop. stats en usuarios  
+      user.stats = {//creo la prop. stats en usuarios con valores por defecto...
         percent: 0,
         exercises: { total: 0, completed: 0, percent: 0 },
         reads: { total: 0, completed: 0, percent: 0 },
@@ -100,8 +100,8 @@ window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los 
         for (var j = 0; j < courses.length; j++) {//recorro los cursos que me dieron por parámetro
           var key = courses[j];
           var course = progress[key];//busco en el progreso q estoy tal curso...
-          if (course) {
-            //Conjunto de variables que me sirven para calcular todo lo que me hará falta para stats
+
+          if (course) {//validacion, y declaro vars q me serivrán para rellenar las stats
             var totalParts = 0;//partes q existen en total en todo el progreso de tal usuario
             var completedParts = 0;//partes q se han completado para este usuario
             var totalReads = 0;//lecturas q ha tenido
@@ -114,7 +114,7 @@ window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los 
 
             for (var unitKey in course.units) {//itero en las llaves de las unidades
               if (Object.prototype.hasOwnProperty.call(course.units, unitKey)) {//valido si la llave pertenece al objeto
-                var unit = course.units[unitKey];
+                var unit = course.units[unitKey];//saco el valor no la llave...
 
                 totalParts += unit.totalParts;//Todas las partes q existen en total de tal usuario
                 completedParts += unit.completedParts;//Tendré todas las unidades completadas de todos los cursos
@@ -145,11 +145,44 @@ window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los 
                 }
               }
             }
+            //actualizacion del dato de los stats utilizando las variables .
+            user.stats = {
+              percent: totalParts > 0//no se puede dividir por 0
+                          ? completedParts / totalParts * 100//formula de %
+                          : 0,
+              exercises: {
+                total: totalExercises,
+                completed: completedExercises,
+                percent: totalExercises > 0
+                            ? completedExercises / totalExercises * 100
+                            : 0
+              },
+              reads: {
+                total: totalReads,
+                completed: completedReads,
+                percent: totalReads > 0
+                            ? completedReads / totalReads * 100
+                            : 0
+              },
+              quizzes: {
+                total: totalQuizzes,
+                completed: completedQuizzes,
+                percent: totalQuizzes > 0
+                            ? completedQuizzes / totalQuizzes * 100
+                            : 0,
+                scoreSum: scoreQuizzes,//la suma de todos los score
+                scoreAvg: completedQuizzes > 0
+                            ? scoreQuizzes / completedQuizzes
+                            : 0
+              },
+            };
           }
         }
       }
+      result.push(user);
     }
   }
+  return result;
 };
 
 window.sortUsers = (users, orderBy, orderDirection) => {
