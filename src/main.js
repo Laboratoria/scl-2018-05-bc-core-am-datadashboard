@@ -8,14 +8,12 @@ const exerciseColumn = document.getElementById("exercise-column");
 const quizColumn = document.getElementById("quiz-column");
 const totalColumn = document.getElementById("total-column");
 
-//creé las variables que utilizaremos como los objetos, aun no tienen valor puesto que aún no se cumple 
-//la promesa que nos devolverá el JSON como datos
-window.loadData(data => {//data devuelve el "contexto" de datos que cargué loadComplete; cohort, users, datos
+window.loadData(data => {
+  
   loading.style.display = 'none';
   window.renderCohorts(data.cohorts);
 });
 
-//DOM
 window.renderCohorts = (cohorts) => {
   if (cohorts) {
     var innerHtml = "";
@@ -30,8 +28,8 @@ window.renderCohorts = (cohorts) => {
     cohortSelect.innerHTML = innerHtml;
 
     cohortSelect.addEventListener("change", () => {
-      var cohortIndex = cohortSelect.value;
-      var cohortData = window.data.context.cohortDatas[cohortIndex];
+      let cohortIndex = cohortSelect.value;
+      let cohortData = window.data.context.cohortDatas[cohortIndex];
 
       window.options.cohort = cohortData.cohort;
       window.options.cohortData.users = cohortData.users;
@@ -129,11 +127,11 @@ window.renderCohorts = (cohorts) => {
 
 window.updateTable = () => {
 
-  var users = window.processCohortData(window.options);
-  var innerHtml = "";
+  let users = window.processCohortData(window.options);
+  let innerHtml = "";
 
-  for (var i = 0; i < users.length; i++) {
-    var user = users[i];
+  for (let i = 0; i < users.length; i++) {
+    let user = users[i];
 
     innerHtml += "<tr><td>"+user.name+"</td><td>"+user.stats.reads.percent+"</td><td>"+user.stats.exercises.percent+"</td><td>"+user.stats.quizzes.scoreAvg+"</td><td>"+user.stats.percent+"</td></tr>";
   }

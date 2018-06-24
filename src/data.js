@@ -71,12 +71,6 @@ window.calculateCohortDatas = (users, progresses, cohorts) => {//recorre los coh
   }
   return result;
 };
-window.loadData = (loadComplete) => {
-  fetch(cohortJson)
-    .then(response => response.json())
-    .then(data => {
-      window.data.context.cohorts = data;
-      window.data.loading--;//cada vez q se cumple un fetch le disminuye uno a la var loading q está dentro de data, dentro de windows
 
 window.getCohortUsers = (users, cohort) => {//seleccion de usuarios por cohort
   var result = [];
