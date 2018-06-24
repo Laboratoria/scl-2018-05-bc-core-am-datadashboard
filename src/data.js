@@ -8,17 +8,16 @@ window.data = {//variable declarada como un objeto con 2 prop. loadin y contex q
     cohorts: null,
     users: null,
     progresses: null,
-    cohortDatas: null //arr de la f(computeUsersStats), tendré el listado de usuarios
+    cohortDatas: null
   }
 };
 
-window.loadData = (loadComplete) => {//metodo loadData q recibe una función y ejecuta los 3 fetch
+window.loadData = (loadComplete) => {//metodo q recibe una función y ejecuta los 3 fetch
   fetch(cohortJson)
     .then(response => response.json())
     .then(data => {
       window.data.context.cohorts = data;//le asigno el valor de data a cohort
-      window.data.loading--;//cada vez q se cumple un fetch le disminuye uno a la var loading q está dentro de data, dentro de windows
-
+      window.data.loading--;//cada vez q se cumple un fetch le disminuye uno a la var loading q está dentro de data
       if (window.data.loading == 0) completePromise(loadComplete);//ya finalizaron y llama a loadComplete
     });
 
@@ -28,7 +27,7 @@ window.loadData = (loadComplete) => {//metodo loadData q recibe una función y e
       window.data.context.users = data;
       window.data.loading--;
 
-      if (window.data.loading == 0) completePromise(loadComplete);
+      if (window.data.loading == 0) completePromise(loadComplete);//recibe el mismo param. de la f() loadCom.
     });
 
   fetch(progressJson)
@@ -41,18 +40,39 @@ window.loadData = (loadComplete) => {//metodo loadData q recibe una función y e
     });
 
   var completePromise = (loadComplete) => {
-    window.data.context.cohortDatas = window.calculateCohortDatas(//
+    window.data.context.cohortDatas = window.calculateCohortDatas(//********** */
       window.data.context.users,
       window.data.context.progresses,
       window.data.context.cohorts
     );
     loadComplete(window.data.context);
   };
-};//hacer un enganche antes de llamar a la promesa
+};
 
+window.calculateCohortDatas = (users, progresses, cohorts) => {//recorre los cohorts
+  var result = [];
 
-//Obtener todos los usuarios que tienen un cohort
-window.getCohortUsers = (users, cohort) => {
+  if (cohorts) {//validar q existe, tiene valor
+    for (var i = 0; i < cohorts.length; i++) {
+      var cohort = cohorts[i];
+      var courses = window.getCohortCourseKeys(cohort);
+      var computedUsers = window.computeUsersStats(
+        window.getCohortUsers(users, cohort),
+        progresses,
+        courses);
+
+      result.push({
+        cohort: cohort,
+        progresses: progresses,
+        users: computedUsers,
+        courses: courses
+      });
+    }
+  }
+  return result;
+};
+
+window.getCohortUsers = (users, cohort) => {//seleccion de usuarios por cohort
   var result = [];
 
   if (cohort && cohort.id && users) {//validación
@@ -72,7 +92,7 @@ window.getCohortCourseKeys = (cohort) => {//funcion q saca todas las llaves en f
 
   if (cohort && cohort.coursesIndex) {//validacion del objeto y su propiedad
     for (var key in cohort.coursesIndex) {
-      if (Object.prototype.hasOwnProperty.call(cohort.coursesIndex, key)) {//call(objeto<---llave)
+      if (Object.prototype.hasOwnProperty.call(cohort.coursesIndex, key)) {//call(objeto, llave)
         result.push(key);//guardo la llave en el arreglo
       }
     }
@@ -80,15 +100,13 @@ window.getCohortCourseKeys = (cohort) => {//funcion q saca todas las llaves en f
   return result;
 };
 
-//Le pasaré el arr q acabo de obtener...
-
 window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los cursos se obtienen de la prop coursesIndex
   var result = [];
 
   if (users && progresses && courses) {//Validación
     for (var i = 0; i < users.length; i++) {
       var user = users[i];//cada usuario
-    var progress = progresses[user.id];//por cada usuario saco su progreso, indexo en [] el id del usuario en la var progreso.
+      var progress = progresses[user.id];//por cada usuario saco su progreso, indexo en [] el id del usuario en la var progreso.
 
       user.stats = {//creo la prop. stats en usuarios con valores por defecto...
         percent: 0,
@@ -123,7 +141,7 @@ window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los 
                   if (Object.prototype.hasOwnProperty.call(unit.parts, partKey)) {
                     var part = unit.parts[partKey];//guardo el objeto parts q estoy iterando
 
-                    switch (part.type) {//Parte tiene 3 tipos, read, exercise y quiz. 
+                    switch (part.type.toLowerCase()) {//Parte tiene 3 tipos, read, exercise y quiz. 
                       case "read": {
                         totalReads++;//si hay un read le sumo 1
                         completedReads += part.completed ? part.completed : 0;//validacion, si part tiene la completed, incremento la parte completada. Si no, 0, no suma.
@@ -145,8 +163,7 @@ window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los 
                 }
               }
             }
-            //actualizacion del dato de los stats utilizando las variables .
-            user.stats = {
+            user.stats = {//actualizacion del dato de los stats utilizando las variables .
               percent: totalParts > 0//no se puede dividir por 0
                           ? completedParts / totalParts * 100//formula de %
                           : 0,
@@ -186,7 +203,8 @@ window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los 
 };
 
 // orderby: total, read, exercise, quiz, avg, ( name <--- default )
-window.sortUsers = (users, orderBy, orderDirection) => {//definirlo en el DOM
+
+window.sortUsers = (users, orderBy, orderDirection) => {
   if (orderBy) {
     if (users) {
       orderBy = orderBy.toLowerCase();
@@ -201,7 +219,7 @@ window.sortUsers = (users, orderBy, orderDirection) => {//definirlo en el DOM
           var user2 = users[j];
 
           switch (orderBy) {
-            case "total": if (orderDirection == "desc") {//
+            case "total": if (orderDirection == "desc") {
               if (user1.stats.percent < user2.stats.percent) {
                 users[j] = user1;
                 users[i] = user1 = user2;
@@ -301,6 +319,18 @@ window.filterUsers = (users, search) => {
 };
 
 window.processCohortData = (options) => {
-
+  if (options && options.cohortData && options.cohortData.users) {
+    var filteredUsers = window.filterUsers(options.cohortData.users, options.search);
+    
+    return window.sortUsers(filteredUsers, options.orderBy, options.orderDirection);//usuarios ya filtrados para organizar más rápido
+  }
+  return [];//devuelvo todos los usuarios si no hay q filtrar
 };
 
+
+
+
+
+/* it('debería exponer función filterUsers en objeto global', () => {
+    assert.isFunction(filterUsers);
+  }); */
