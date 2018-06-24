@@ -16,10 +16,10 @@ window.loadData(data => {
 
 window.renderCohorts = (cohorts) => {
   if (cohorts) {
-    var innerHtml = "";
+    let innerHtml = "";
 
-    for (var i = 0; i < cohorts.length; i++) {
-      var cohort = cohorts[i];
+    for (let i = 0; i < cohorts.length; i++) {
+      let cohort = cohorts[i];
 
       if (cohort) {
         innerHtml += "<option value='" + i + "'>" + cohort.id + "</option>";
