@@ -64,4 +64,5 @@ window.processCohortData = (options) => {
 
 /* it('debería exponer función filterUsers en objeto global', () => {
     assert.isFunction(filterUsers);
-  }); */
+  }); 
+*/
