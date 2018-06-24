@@ -1,4 +1,3 @@
-
 .container-fluid{
   background: #fafafa;
   padding: 0%;
@@ -9,11 +8,7 @@
   display: flex;
   width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
 	left: 0; /* Posicionamos la cabecera al lado izquierdo */
-  top: 0; /* Posicionamos la cabecera pegada arriba */
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0; 
+	top: 0; /* Posicionamos la cabecera pegada arriba */
 	overflow: hidden; /* Hacemos que la cabecera tenga una posición fija */
 }
 
@@ -31,6 +26,7 @@
   text-align: center;
   padding: 1em 2em;
   overflow: hidden; 
+
 }
 
 /* -------------Estilos Barra Menu---------------*/
@@ -40,10 +36,6 @@
   height: 100vh;
   background: white;
   border-right: 1px solid #ededed;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
 }
 
 ul {
@@ -67,9 +59,6 @@ ul {
   overflow: hidden; 
 }
 
-button {
-  border:none;
-}
 /* Cambiar el color del enlace al desplazar el mouse */
 .menuLink:hover {
   background: #FF009E;
@@ -81,87 +70,15 @@ button {
 .content{
   padding: 2.250em 2.250em;
   overflow-y: auto;
-  overflow-y: hidden;
-}
+  overflow-y: hidden;}
 
-#myInput {
-  border:none;
-  box-shadow: none;
+  /* -------Veladura para carga-------- */
+  .loading-background-panel {
+    background: #0c0c0c;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
-/* -------------Estilos Barra Menu---------------*/
-
-/* .contenedorMenu {
- 
-  height: 100vh;
-}
-.contenedor {
-  display: flex;
-  justify-content: space-between; 
-  height: 100vh;  
-}
-
-.logo {
-  text-align: center;
-  line-height: 45%;
-  margin-right: auto;
-  padding: 1em 1em;
-}
-
-.perfilUser {
-  background: #fafafa;
-  color: #737373;
-  text-align: justify;
-  padding: 2em 1em;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  
-}
-
-.iconMenu {
-  display: block;
-  width: 40px;
-  font-size: 30px;
-  background: white;
-  text-align: center;
-  line-height: 45%;
-  margin-right: auto;
-}
-
-.nav {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 105%;
-  transition: all 0.4s;
-  border-right: 1px solid #737373;    
-  height: 100vh;
-}
-
-.menu {
-  list-style: none;
-  padding-top: 19%;
-  margin: 0%;
-  width: 100%;
-  cursor: pointer;
-}
-
-.menuLink {
-  display: block;
-  padding: 20px;
-  background: #ffffff;
-  text-decoration: none;
-  color: black;
-}
-
-.menuLink:hover {
-  background: #FF009E;
-  color: black;
-}
-
-.view {
-  left: 0;
-<<<<<<< HEAD
-}
-
-=======
->>>>>>> 0cad39970367de7b573d46a7d28df28a424c2b95
