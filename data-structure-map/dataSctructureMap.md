@@ -1,0 +1,1 @@
+![Alt text](/scl-2018-05-bc-core-am-datadashboard/data-structure-map/data´structure-map.jpg)
