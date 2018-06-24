@@ -1,10 +1,13 @@
+# Data Dashboard
 
-Usuario Principal: Training Manager de Laboratoria
+## Objetivo
 
-Objetivo principal de esta plataforma es graficar visualmente el progreso de avance de las estudiantes de Laboratoria para para que la TM use esta Data para toma de desiciones. Los principales datos que nuestra usuario necesita visualizar en la interfaz:
+**Usuario Principal:** Training Manager de Laboratoria
 
- -Ver el perfil de cada estudiante, separado por la sección que corresponda para visualizar los progresos individuales de cada estudiante en los diferentes cursos.
- -Ver el avance general del grupo si es posible verlo graficado en cada curso.
+Objetivo principal de esta plataforma es graficar visualmente el progreso de avance de las estudiantes de Laboratoria para para que la TM de Laboratoria use esta Data para toma de desiciones. Los principales datos que nuestra usuario necesita visualizar en la interfaz:
+
+ -Ver el perfil de cada estudiante, separado por la sección (cohort) que corresponda para visualizar los progresos individuales de cada estudiante en los diferentes cursos.
+ -Ver el avance general del grupo si es posible verlo graficado.
 
  La usuario revisa periodicamete los datos con una frecuencia de día por medio. Es por este motivo hemos propuesto un diseño que contenga 4 items principales:
  
