@@ -10,11 +10,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
 </head>
-
 <body>
-
-  <!-- Contenido de la página -->
-  <div class="container-fluid">
+   <!-- Container -->
+   <div class="container-fluid">
     <div class="row headerRow">
       <!-- Aquí está el logo de Laboratoria -->
       <div class="col-xs-6 col-md-4 logoHeader">
@@ -22,7 +20,6 @@
           <img src="img/laboratoriaLogo.png" alt="logo Laboratoria">
         </picture>
       </div>
-
       <!-- Aquí está la Cabecera -En que item estoy -->
       <div class="col-xs-12 col-sm-6 col-md-8 header">
         <header>
@@ -31,7 +28,6 @@
       </div>
     </div>
     <div class="row">
-
       <!-- menú de navegación fijo -->
       <div class="col-xs-6 col-md-4 contenedorMenu">
         <nav class="nav" id="nav">
@@ -39,36 +35,30 @@
             <li class="perfilUser">
               <h4>Training Manager</h4> training.manager@laboratoria.la</li>
             <li class="menuItem">
-
-             
-              <button type="button" id="cohortBtn" class="btn btn-secondary btn-lg btn-block menuLink">COHORT</button>
-
-              
-            </li>
-            <li class="menuItem">
-              <button type="button" class="btn btn-secondary btn-lg btn-block menuLink">ESTUDIANTES</button>
-            </li>
-            <li class="menuItem">
-              <button type="button" class="btn btn-secondary btn-lg btn-block menuLink">PROGRESO</button>
-            </li>
-            <li class="menuItem">
-              <button type="button" class="btn btn-secondary btn-lg btn-block menuLink">CURSOS</button>
+                <select id="cohorts-select">
+                </select>
             </li>
           </ul>
         </nav>
       </div>
       <!-- Aquí está el contenido -->
       <div id="content" class="col-xs-12 col-sm-6 col-md-8">
-
-        <div id="contentDiv" class="content">
-          <div>
-            <input class="form-control" id="myInput" type="text" placeholder="Search..">
-          </div>
-        </div>
-
+          <input id="cohort-search" type="text">
+          <table style="width:100%">
+            <thead>
+              <tr>
+                <th>Nombre <span id="name-column" style="cursor: pointer;">(-)</span></th>
+                <th>Lecturas <span id="read-column" style="cursor: pointer;">(-)</span></th>
+                <th>Ejercicios <span id="exercise-column" style="cursor: pointer;">(-)</span></th>
+                <th>Retos <span id="quiz-column" style="cursor: pointer;">(-)</span></th>
+                <th>Total <span id="total-column" style="cursor: pointer;">(-)</span></th>
+              </tr>
+            </thead>
+            <tbody id="cohort-table-content">
+            </tbody>
+          </table>
       </div>
     </div>
-
   </div>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
