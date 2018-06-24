@@ -8,6 +8,17 @@ const exerciseColumn = document.getElementById("exercise-column");
 const quizColumn = document.getElementById("quiz-column");
 const totalColumn = document.getElementById("total-column");
 
+window.options = {
+  cohort: null,
+  cohortData: {
+    users: null,
+    progress: null
+  },
+  orderBy: "",
+  orderDirection: "desc",
+  search: ""
+};
+
 window.loadData(data => {
   
   loading.style.display = 'none';
