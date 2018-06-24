@@ -185,12 +185,119 @@ window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los 
   return result;
 };
 
-window.sortUsers = (users, orderBy, orderDirection) => {
+// orderby: total, read, exercise, quiz, avg, ( name <--- default )
+window.sortUsers = (users, orderBy, orderDirection) => {//definirlo en el DOM
+  if (orderBy) {
+    if (users) {
+      orderBy = orderBy.toLowerCase();
+      orderDirection = orderDirection && orderDirection.toLowerCase() == "asc"
+                          ? "asc"
+                          : "desc";
+      
+      for(var i = 0; i < users.length - 1; i++) {
+        var user1 = users[i];
 
+        for(var j = i + 1; j < users.length; j++) {
+          var user2 = users[j];
+
+          switch (orderBy) {
+            case "total": if (orderDirection == "desc") {//
+              if (user1.stats.percent < user2.stats.percent) {
+                users[j] = user1;
+                users[i] = user1 = user2;
+              }
+            }
+            else if (user1.stats.percent > user2.stats.percent) {
+              users[j] = user1;
+              users[i] = user1 = user2;
+            }
+            break;
+
+            case "read": if (orderDirection == "desc") {
+              if (user1.stats.reads.percent < user2.stats.reads.percent) {
+                users[j] = user1;
+                users[i] = user1 = user2;
+              }
+            }
+            else if (user1.stats.reads.percent > user2.stats.reads.percent) {
+              users[j] = user1;
+              users[i] = user1 = user2;
+            }
+            break;
+
+            case "exercise": if (orderDirection == "desc") {
+              if (user1.stats.exercises.percent < user2.stats.exercises.percent) {
+                users[j] = user1;
+                users[i] = user1 = user2;
+              }
+            }
+            else if (user1.stats.exercises.percent > user2.stats.exercises.percent) {
+              users[j] = user1;
+              users[i] = user1 = user2;
+            }
+            break;
+
+            case "quiz": if (orderDirection == "desc") {
+              if (user1.stats.quizzes.percent < user2.stats.quizzes.percent) {
+                users[j] = user1;
+                users[i] = user1 = user2;
+              }
+            }
+            else if (user1.stats.quizzes.percent > user2.stats.quizzes.percent) {
+              users[j] = user1;
+              users[i] = user1 = user2;
+            }
+            break;
+
+            case "avg": if (orderDirection == "desc") {
+              if (user1.stats.quizzes.scoreAvg < user2.stats.quizzes.scoreAvg) {
+                users[j] = user1;
+                users[i] = user1 = user2;
+              }
+            }
+            else if (user1.stats.quizzes.scoreAvg > user2.stats.quizzes.scoreAvg) {
+              users[j] = user1;
+              users[i] = user1 = user2;
+            }
+            break;
+
+            default: if (orderDirection == "desc") {
+              if (user1.name < user2.name) {
+                users[j] = user1;
+                users[i] = user1 = user2;
+              }
+            }
+            else if (user1.name > user2.name) {
+              users[j] = user1;
+              users[i] = user1 = user2;
+            }
+            break;
+          }
+        } 
+      }
+    }
+  }
+  return users;
 };
 
 window.filterUsers = (users, search) => {
+  if (search) {//validacion
+    var result = [];//almacenos a los usuarios q cumplen con el criterio de búsqueda
 
+    if (users) {
+      search = search.toLowerCase();
+
+      for (var i = 0; i < users.length; i++) {//recorro usuarios
+        var user = users[i];
+
+        if (user && user.name && user.name.toLowerCase().indexOf(search) >= 0) {//validación y pasar todo a minúsculas, pregunto el índice en q se encuentra el criterio de búsqueda. Si es menor a 0 no existe
+          result.push(user);//lo adiciono al arrelgo si se encuentra (>=0)
+        }
+      }
+    }
+    return result;//arreglo vacío
+  }
+  return users;
 };
 
 window.processCohortData = (options) => {
