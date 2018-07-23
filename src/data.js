@@ -5,10 +5,10 @@ const cohortJson = "http://127.0.0.1:8887/data/cohorts.json"
 window.data = {//variable declarada como un objeto con 2 prop. loadin y contex q es un objeto
   loading: 3,//se tienen q cumplir las 3 promesas fetch, a medida q una se cumpla se le restará 1
   context: {
-    cohorts: null,
-    users: null,
-    progresses: null,
-    cohortDatas: null
+    cohorts: null,//dato cargado por un fetch
+    users: null,//idem
+    progresses: null,//idem
+    cohortDatas: null//datos precalculados
   }
 };
 
@@ -49,22 +49,22 @@ window.loadData = (loadComplete) => {//metodo q recibe una función y ejecuta lo
   };
 };
 
-window.calculateCohortDatas = (users, progresses, cohorts) => {//recorre los cohorts
+window.calculateCohortDatas = (users, progresses, cohorts) => {//transforma los datos de manera de que sea eficiente
   let result = [];
 
   if (cohorts) {//validar q existe, tiene valor
     for (let i = 0; i < cohorts.length; i++) {
       let cohort = cohorts[i];
-      let courses = window.getCohortCourseKeys(cohort);
+      let courses = window.getCohortCourseKeys(cohort);//las llaves de los cursos del cohort
       let computedUsers = window.computeUsersStats(
         window.getCohortUsers(users, cohort),
         progresses,
         courses);
 
-      result.push({
+      result.push({//objeto con los datos ya precalculados
         cohort: cohort,
         progresses: progresses,
-        users: computedUsers,
+        users: computedUsers,//ya calculada la prop stats
         courses: courses
       });
     }
@@ -115,7 +115,7 @@ window.computeUsersStats = (users, progresses, courses) => {//Las llaves de los 
         quizzes: { total: 0, completed: 0, percent: 0, scoreSum: 0, scoreAvg: 0 },
       };
       if (progress) {//validación, si no está dará los valores por defecto q le di
-        for (let j = 0; j < courses.length; j++) {//recorro los cursos que me dieron por parámetro
+        for (let j = 0; j < courses.length; j++) {//recorro llave de los cursos
           let key = courses[j];
           let course = progress[key];//busco en el progreso q estoy tal curso...
 
