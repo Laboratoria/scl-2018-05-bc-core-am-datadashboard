@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 .loading-background-panel {
   background: #0c0c0c;
   opacity: 0.7;
@@ -8,10 +10,7 @@
   left: 0;
 }
 
-.padding{
-  padding: 2%;
-}
-
+>>>>>>> upstream/master
 .container-fluid{
   background: #fafafa;
   padding: 0%;

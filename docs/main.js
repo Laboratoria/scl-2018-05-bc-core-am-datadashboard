@@ -8,7 +8,7 @@ const exerciseColumn = document.getElementById("exercise-column");
 const quizColumn = document.getElementById("quiz-column");
 const totalColumn = document.getElementById("total-column");
 
-window.options = {//parametro para la función processCohortData
+window.options = {
   cohort: null,
   cohortData: {
     users: null,
